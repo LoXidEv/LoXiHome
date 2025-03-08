@@ -10,7 +10,7 @@ export default {
   methods: {
     gethitokoto() {
       axios
-        .get('https://v1.hitokoto.cn/?c=d&charset=utf-8')
+        .get('https://v1.hitokoto.cn/?c=k&charset=utf-8')
         .then(({ data }) => {
           this.hitokoto = data.hitokoto
         })

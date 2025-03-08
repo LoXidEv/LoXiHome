@@ -18,8 +18,8 @@ import Hitokoto from '@/components/Hitokoto.vue';
 .new-c-h-card {
   padding: 10px;
   border-radius: 5px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px #dbdbdb;
+  background-color: var(--card-bg-color);
+  /* box-shadow: 0 0 10px #dbdbdb; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -20,14 +20,15 @@
 </template>
 
 <style>
-@media screen and (max-width: 495px) {
+@media screen and (max-width: 700px) {
     .new-contact {
         grid-template-columns: 1fr 1fr !important;
     }
 }
 
 .new-c-card:hover {
-    box-shadow: 0 0 25px 10px #d4d4d4;
+    /* box-shadow: 0 0 20px #c5c5c5; */
+    background-color: #f5f5f5d2;
 }
 
 .new-contact {
@@ -49,12 +50,12 @@
 .new-c-card {
     padding: 10px;
     border-radius: 5px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px #dbdbdb;
+    background-color: var(--card-bg-color);
+    /* box-shadow: 0 0 10px #dbdbdb; */
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: box-shadow 0.2s;
+    transition: all 0.3s;
     transition-timing-function: linear;
     user-select: none;
     -webkit-user-drag: none;

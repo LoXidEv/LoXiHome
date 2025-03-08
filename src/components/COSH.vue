@@ -4,7 +4,7 @@
 <template>
     <a target="_blank" class="new-c-card" href="https://cosh.work"
         style="display: flex;align-items: center;justify-content: space-between;overflow: hidden;">
-        <img style="user-select: none;" src="/img/cosh.png" class="new-netfox">
+        <img style="user-select: none;" src="/img/cosh.png" class="new-COSH">
         <h2>
             椰灰社
         </h2>
@@ -12,7 +12,7 @@
 </template>
 
 <style>
-.new-netfox {
+.new-COSH {
     width: 20%;
 }
 </style>

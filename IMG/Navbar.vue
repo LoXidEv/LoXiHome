@@ -15,7 +15,7 @@
 </template>
 
 <style>
-.navbar {
+/* .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,5 +49,5 @@
 
 .navbar-link:hover{
     background-color: #d3d3d34f;
-}
+} */
 </style>
