@@ -32,6 +32,7 @@
   font-weight: 400; */
   src: url('/font/Poppins-Regular.ttf');
 }
+
 /* @import url('https://fonts.font.im/css2?family=Noto+Sans+SC:wght@500&display=swap'); */
 
 * {
@@ -43,7 +44,7 @@
   --theme-color-1: #ffca80;
   --theme-color-2: #7da7d4;
   --theme-color-2-oc: #7da7d4c7;
-  --card-bg-color: #ffffff8a;
+  --card-bg-color: #ffffffd3;
   --text-color: #2b3d4f;
 }
 
