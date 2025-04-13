@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="Background"></div>
+  <!-- <div class="Background"></div> -->
   <main class="main">
     <div class="width">
       <RouterView />
@@ -44,7 +44,9 @@
   --theme-color-1: #ffca80;
   --theme-color-2: #7da7d4;
   --theme-color-2-oc: #7da7d4c7;
-  --card-bg-color: #ffffffd3;
+  --card-bg-color: #f3f3f3;
+  --card-bg-color-hover: #ebebeb;
+  --card-border-color: #f3f3f3;
   --text-color: #2b3d4f;
 }
 
@@ -52,7 +54,7 @@ body {
   font-family: 'Poppins SemiBold';
   min-width: 320px;
   color: #2b3d4f;
-  background-color: #f3f3f3f3;
+  /* background-color: #f3f3f3f3; */
   /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://avatars.githubusercontent.com/u/110319858?v=4"); */
   /* font-family: 'Noto Sans SC', sans-serif; */
 }
@@ -106,14 +108,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 8px;
   user-select: none;
 } */
 
 .Card {
   margin: 5px 0;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: var(--card-bg-color);
   /* box-shadow: 0 0 10px #dbdbdb; */
 }

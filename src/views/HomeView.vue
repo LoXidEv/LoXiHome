@@ -21,11 +21,11 @@ import COSH from '@/components/COSH.vue';
           <br>
           名称：LoXi
           <br>
-          种类：暮光狐
+          物种：暮光狐
           <br>
-          喜好：咖啡、柑橘属水果
+          喜好：柑橘属水果
           <br>
-          擅长：睡觉、计算机
+          擅长：睡大觉、计算机网页开发
           <!-- 口味：香草椰子灰 -->
         </div>
       </div>
@@ -37,7 +37,7 @@ import COSH from '@/components/COSH.vue';
 
 <style>
 .OC-IMG {
-  width: 120px;
+  width: 130px;
   user-select: none;
   -webkit-user-drag: none;
 }
@@ -46,7 +46,8 @@ import COSH from '@/components/COSH.vue';
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
 }
 </style>

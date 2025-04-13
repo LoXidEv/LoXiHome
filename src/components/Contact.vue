@@ -28,7 +28,7 @@
 
 .new-c-card:hover {
     /* box-shadow: 0 0 20px #c5c5c5; */
-    background-color: #f5f5f5d2;
+    background-color: var(--card-bg-color-hover);
 }
 
 .new-contact {
@@ -49,7 +49,7 @@
 
 .new-c-card {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: var(--card-bg-color);
     /* box-shadow: 0 0 10px #dbdbdb; */
     display: flex;

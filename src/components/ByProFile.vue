@@ -30,7 +30,7 @@
 
 .new-one {
     margin-left: -8px;
-    margin-top: 20px;
+    margin-top: 8px;
     user-select: none;
 }
 
@@ -50,19 +50,9 @@
 }
 
 .new-profile {
-    /* position: relative; */
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
-    /* height: 200px; */
-    /* z-index: 1; */
-    background-color: var(--card-bg-color);
-    /* border: 2px solid #ffffff; */
-    border-radius: 5px;
-    padding: 30px 20px;
-    /* overflow: hidden; */
-    /* border-radius: 5px; */
-    /* box-shadow: 0 0 10px #dbdbdb; */
+    /* background-color: var(--card-bg-color); */
+    border-radius: 8px;
+    /* padding: 30px 20px; */
 }
 
 /* 

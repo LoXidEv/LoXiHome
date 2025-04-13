@@ -16,9 +16,11 @@ import Hitokoto from '@/components/Hitokoto.vue';
 
 <style>
 .new-c-h-card {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: var(--card-bg-color);
+  margin-top: 10px;
+  padding: 5px 8px;
+  border-radius: 8px;
+  border: 5px solid var(--card-border-color);
+  /* background-color: var(--card-bg-color); */
   /* box-shadow: 0 0 10px #dbdbdb; */
   display: flex;
   flex-direction: column;
@@ -26,10 +28,12 @@ import Hitokoto from '@/components/Hitokoto.vue';
 }
 
 .new-codetime-hit {
-  margin: 5px 0;
+  display: flex;
+  gap: 5px;
+  /* margin: 5px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  grid-row-gap: 5px; */
 }
 </style>
