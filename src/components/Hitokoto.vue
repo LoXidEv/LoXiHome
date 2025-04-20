@@ -24,7 +24,7 @@ export default {
 </script>
 
 <template>
-  <div class="animate__animated animate__flash">
+  <div class="animate__animated animate__fadeIn">
     {{ hitokoto }}
   </div>
   <div style="font-size: 13px;user-select: none;">

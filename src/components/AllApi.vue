@@ -16,7 +16,7 @@ import Hitokoto from '@/components/Hitokoto.vue';
 
 <style>
 .new-c-h-card {
-  margin-top: 10px;
+  /* margin-top: 5px; */
   padding: 5px 8px;
   border-radius: 8px;
   border: 5px solid var(--card-border-color);
@@ -25,6 +25,7 @@ import Hitokoto from '@/components/Hitokoto.vue';
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 }
 
 .new-codetime-hit {
