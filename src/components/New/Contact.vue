@@ -1,18 +1,17 @@
 <template>
     <div class="new_contact">
-        <RouterLink class="new_contact_item animate__animated animate__headShake" target="_blank"
+        <a class="new_contact_item animate__animated animate__headShake" target="_blank"
             href="https://afdian.com/a/loxidev">
             <img src="/img/afdian.svg" style="position: absolute;width: 40px;" class="new_contact_logo">
-        </RouterLink>
-
-        <RouterLink class="new_contact_item animate__animated animate__headShake" target="_blank"
+        </a>
+        <a class="new_contact_item animate__animated animate__headShake" target="_blank"
             href="https://space.bilibili.com/1093209533">
             <img src="/img/Bilibili.svg" class="new_contact_logo">
-        </RouterLink>
-        <RouterLink target="_blank" class="new_contact_item animate__animated animate__headShake"
+        </a>
+        <a target="_blank" class="new_contact_item animate__animated animate__headShake"
             href="https://github.com/loxidev">
             <img src="/img/github.svg" class="new_contact_logo">
-        </RouterLink>
+        </a>
     </div>
 </template>
 

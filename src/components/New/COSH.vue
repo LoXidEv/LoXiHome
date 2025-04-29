@@ -6,9 +6,9 @@ export default {
 
 <template>
     <div class="new_cosh animate__animated animate__headShake">
-        <RouterLink target="_blank" href="https://cosh.work">
+        <a target="_blank" href="https://cosh.work">
             <img src="/img/cosh2.png" class="new_cosh_logo">
-        </RouterLink>
+        </a>
     </div>
 </template>
 
