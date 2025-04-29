@@ -1,16 +1,25 @@
 <script setup>
-import ByProFile from '@/components/ByProFile.vue';
-import Contact from '@/components/Contact.vue';
-import AllApi from '@/components/AllApi.vue';
+// import ByProFile from '@/components/ByProFile.vue';
+// import Contact from '@/components/Contact.vue';
+// import AllApi from '@/components/AllApi.vue';
 // import Navbar from './components/Navbar.vue';
-import COSH from '@/components/COSH.vue';
+// import COSH from '@/components/COSH.vue';
+import Profile from '@/components/New/Profile.vue';
+import CodeTime from '@/components/New/CodeTime.vue';
+import COSH from '@/components/New/COSH.vue';
+import Contact from '@/components/New/Contact.vue';
 </script>
 
 <template>
   <div class="animate__animated animate__fadeIn">
-    <ByProFile />
-    <!-- <Navbar /> -->
-    <!-- <RouterView /> -->
+    <COSH />
+    <div class="new_profile">
+      <Profile />
+      <img src="/img/LoXi_O.webp" alt="LoXi" class="new_profile_bg">
+    </div>
+    <CodeTime />
+    <Contact />
+    <!-- <ByProFile />
     <AllApi />
     <div class="Card">
       <div class="OC">
@@ -26,17 +35,35 @@ import COSH from '@/components/COSH.vue';
           喜好：柑橘属水果
           <br>
           擅长：睡大觉、计算机网页开发
-          <!-- 口味：香草椰子灰 -->
         </div>
       </div>
     </div>
     <COSH />
-    <Contact />
+    <Contact /> -->
   </div>
 </template>
 
 <style>
-.OC-IMG {
+.new_profile {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* height: 50vh; */
+  position: relative;
+
+  .new_profile_bg {
+    /* transition: all 0.5s; */
+    border-radius: 8px;
+    position: absolute;
+    width: 400px;
+    top: -160px;
+    right: -20px;
+    z-index: -9;
+    /* filter: blur(1px); */
+  }
+}
+
+/* .OC-IMG {
   width: 130px;
   user-select: none;
   -webkit-user-drag: none;
@@ -46,8 +73,6 @@ import COSH from '@/components/COSH.vue';
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  /* justify-content: space-around; */
   justify-content: space-between;
-  /* flex-wrap: wrap; */
-}
+} */
 </style>

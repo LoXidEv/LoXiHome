@@ -54,6 +54,8 @@ body {
   font-family: 'Poppins SemiBold';
   min-width: 320px;
   color: #2b3d4f;
+  /* background-image: url("/img/bg4.svg");
+  background-size: cover; */
   /* background-color: #f3f3f3f3; */
   /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://avatars.githubusercontent.com/u/110319858?v=4"); */
   /* font-family: 'Noto Sans SC', sans-serif; */
@@ -69,6 +71,10 @@ body {
   .width {
     width: 90% !important;
   }
+/* 
+  .new_profile_bg {
+    right: -100px !important;
+  } */
 }
 
 .width {
