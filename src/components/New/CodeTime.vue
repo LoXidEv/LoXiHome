@@ -38,11 +38,11 @@ export default {
 </template>
 
 <style>
-.new_codetime{
+.new_codetime {
     margin-top: 5px;
-    display: inline-block;
     padding: 5px 8px;
     border-radius: 8px;
+    width: 170px;
     background-color: var(--card-bg-color);
     /* border: 5px var(--card-border-color) solid; */
     user-select: none;

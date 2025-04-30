@@ -7,14 +7,14 @@ export default {
 <template>
     <div class="new_profile_p">
         <div class="new_profile_bg-blur"></div>
-        <div class="new_profile_desc animate__animated animate__fadeIn animate__slow animate__delay-2s">
+        <div class="new_profile_desc animate__animated animate__fadeIn animate__slow animate__delay-1s">
             Frontend-Developer
-            <br>Student
+            <br>Student & COSH Owner
         </div>
-        <div class="new_profile_name animate__animated animate__fadeIn animate__slow">
+        <div class="new_profile_name animate__animated animate__fadeIn">
             LoXi - <span style="color:var(--theme-color-1)">洛</span><span style="color:var(--theme-color-2)">溪</span>
         </div>
-        <div class="new_profile_one">「 <span class="animate__animated animate__flash animate__slow">聚是一把火，散是满天星</span> 」
+        <div class="new_profile_one">「 聚是一把火，散是满天星 」
         </div>
     </div>
 </template>
@@ -32,12 +32,12 @@ export default {
         height: 95px;
         top: -5px;
         left: -5px;
-        width: 100%;
+        width: 193px;
         padding: 4px 4px 4px 0;
         border-radius: 8px;
         background-color: rgba(255, 255, 255);
         opacity: 0.8;
-        filter: blur(10px);
+        filter: blur(8px);
     }
 
     .new_profile_desc {

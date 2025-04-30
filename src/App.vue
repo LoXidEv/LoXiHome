@@ -71,13 +71,16 @@ body {
   .width {
     width: 90% !important;
   }
-/* 
+
+  /* 
   .new_profile_bg {
     right: -100px !important;
   } */
 }
 
 .width {
+  padding: 8px 0;
+  position: relative;
   width: 70%;
 }
 
@@ -95,6 +98,7 @@ body {
 }
 
 .main {
+  overflow: hidden;
   /* position: relative;
   z-index: 1; */
   /* background: #ffffff; */

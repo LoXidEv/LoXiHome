@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="new_cosh animate__animated animate__headShake">
+    <div class="new_cosh animate__animated animate__fadeInDown">
         <a target="_blank" href="https://cosh.work">
             <img src="/img/cosh2.png" class="new_cosh_logo">
         </a>
@@ -22,17 +22,10 @@ export default {
         transition: all 0.5s;
         user-select: none;
 
-        &:hover{
+        &:hover {
             transform: scale(1.1);
-            background-color: var(--card-bg-color-hover);
+            background-color: var(--card-bg-color);
         }
     }
-}
-
-.new_link {
-    /* display: flex; */
-    /* align-items: center; */
-    color: var(--theme-color-1);
-    text-decoration: none;
 }
 </style>

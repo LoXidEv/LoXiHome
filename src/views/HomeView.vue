@@ -8,16 +8,16 @@ import Profile from '@/components/New/Profile.vue';
 import CodeTime from '@/components/New/CodeTime.vue';
 import COSH from '@/components/New/COSH.vue';
 import Contact from '@/components/New/Contact.vue';
+import Navbar from '@/components/New/Navbar.vue';
 </script>
 
 <template>
   <div class="animate__animated animate__fadeIn">
+    <img src="/img/LoXi_O.webp" alt="LoXi" class="new_profile_bg">
     <COSH />
-    <div class="new_profile">
-      <Profile />
-      <img src="/img/LoXi_O.webp" alt="LoXi" class="new_profile_bg">
-    </div>
+    <Profile />
     <CodeTime />
+    <Navbar />
     <Contact />
     <!-- <ByProFile />
     <AllApi />
@@ -44,23 +44,15 @@ import Contact from '@/components/New/Contact.vue';
 </template>
 
 <style>
-.new_profile {
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  /* height: 50vh; */
-  position: relative;
-
-  .new_profile_bg {
-    /* transition: all 0.5s; */
-    border-radius: 8px;
-    position: absolute;
-    width: 400px;
-    top: -160px;
-    right: -20px;
-    z-index: -9;
-    /* filter: blur(1px); */
-  }
+.new_profile_bg {
+  /* transition: all 0.5s; */
+  border-radius: 8px;
+  position: absolute;
+  width: 400px;
+  top: -50px;
+  right: -100px;
+  z-index: -9;
+  /* filter: blur(1px); */
 }
 
 /* .OC-IMG {
