@@ -39,6 +39,7 @@ export default {
 
 <style>
 .new_codetime {
+    border: var(--card-border-color) 2px solid;
     margin-top: 5px;
     padding: 5px 8px;
     border-radius: 8px;

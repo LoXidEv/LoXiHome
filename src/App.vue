@@ -44,9 +44,9 @@
   --theme-color-1: #ffca80;
   --theme-color-2: #7da7d4;
   --theme-color-2-oc: #7da7d4c7;
-  --card-bg-color: #f3f3f3;
-  --card-bg-color-hover: #ebebeb;
-  --card-border-color: #f3f3f3;
+  --card-bg-color: #f3f3f3e8;
+  --card-bg-color-hover: #ebebebe8;
+  --card-border-color: #e4e4e4;
   --text-color: #2b3d4f;
 }
 

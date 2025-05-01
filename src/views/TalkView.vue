@@ -59,6 +59,7 @@ export default {
     gap: 5px;
 
     .new_talk_item {
+        border: var(--card-border-color) 2px solid;
         display: flex;
         flex-direction: column;
         gap: 5px;

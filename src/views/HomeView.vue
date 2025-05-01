@@ -48,8 +48,9 @@ import Navbar from '@/components/New/Navbar.vue';
   /* transition: all 0.5s; */
   border-radius: 8px;
   position: absolute;
+  --webkit-user-drag: none;
   width: 400px;
-  top: -50px;
+  top: -45px;
   right: -100px;
   z-index: -9;
   /* filter: blur(1px); */

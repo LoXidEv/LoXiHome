@@ -16,6 +16,7 @@
     text-decoration: none;
     padding: 5px 8px;
     border-radius: 8px;
+    border: var(--card-border-color) 2px solid;
     background-color: var(--card-bg-color);
     transition: all 0.5s;
     font-size: 14px;

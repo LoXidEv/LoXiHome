@@ -60,6 +60,7 @@ export default {
 
 <style>
 .new_title {
+    border: var(--card-border-color) 2px solid;
     text-align: center;
     font-size: 28px;
     line-height: 1;
@@ -80,7 +81,8 @@ export default {
     /* padding: 8px; */
 
     .new_draw_item {
-        border: 5px var(--card-bg-color) solid;
+        border: var(--card-border-color) 2px solid;
+        /* border: 5px var(--card-bg-color) solid; */
         background-color: var(--card-bg-color);
         border-radius: 8px;
         width: 180px;

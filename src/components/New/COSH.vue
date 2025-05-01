@@ -15,6 +15,7 @@ export default {
 <style>
 .new_cosh {
     .new_cosh_logo {
+        border: var(--card-border-color) 2px solid;
         width: 50px;
         /* background-color: var(--card-bg-color); */
         padding: 2px;
