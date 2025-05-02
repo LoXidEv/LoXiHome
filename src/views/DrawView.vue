@@ -35,6 +35,7 @@ export default {
 </script>
 
 <template>
+    <img src="/img/verlan.webp" alt="Verlan" class="new_draw_verlan-bg animate__animated animate__slideInLeft"></img>
     <div class="animate__animated animate__fadeIn"
         style="display: flex;justify-content: center;align-items: center;flex-direction: column;gap: 8px">
         <div class="new_title animate__animated animate__fadeInDown">
@@ -59,6 +60,16 @@ export default {
 </template>
 
 <style>
+.new_draw_verlan-bg {
+    position: absolute;
+    width: 500px;
+    top: 40px;
+    left: -200px;
+    opacity: 0.6;
+    filter: blur(4px);
+    z-index: -1;
+}
+
 .new_title {
     border: var(--card-border-color) 2px solid;
     text-align: center;
