@@ -74,9 +74,9 @@ export default {
         }
 
         .new_talk_name {
-            margin-top: 8px;
+            /* margin-top: 8px; */
             font-size: 20px;
-            line-height: 1.2;
+            /* line-height: 1.5; */
             font-weight: bold;
         }
 

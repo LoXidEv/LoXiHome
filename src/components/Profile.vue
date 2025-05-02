@@ -1,7 +1,4 @@
 <script>
-export default {
-
-}
 </script>
 
 <template>
@@ -9,13 +6,14 @@ export default {
         <div class="new_profile_bg-blur"></div>
         <div class="new_profile_desc animate__animated animate__fadeIn animate__slow animate__delay-1s">
             Frontend-Developer
-            <br>Student & COSH Owner
+            <br>
+            Student & COSH Owner
         </div>
         <div class="new_profile_name animate__animated animate__fadeIn">
-            LoXi - <span style="color:var(--theme-color-1)">洛</span><span style="color:var(--theme-color-2)">溪</span>
+            LoXi - <span style="color: var(--theme-color-1);">洛</span>
+            <span style="color: var(--theme-color-2);">溪</span>
         </div>
-        <div class="new_profile_one">「 聚是一把火，散是满天星 」
-        </div>
+        <div class="new_profile_one">「 聚是一把火，散是满天星 」</div>
     </div>
 </template>
 

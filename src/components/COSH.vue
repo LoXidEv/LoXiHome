@@ -1,18 +1,32 @@
-<script setup>
+<script>
+export default {
+
+}
 </script>
 
 <template>
-    <a target="_blank" class="new-c-card" href="https://cosh.work"
-        style="display: flex;align-items: center;justify-content: space-between;overflow: hidden;">
-        <img style="user-select: none;" src="/img/cosh.png" class="new-COSH">
-        <h2>
-            椰灰社
-        </h2>
-    </a>
+    <div class="new_cosh animate__animated animate__fadeInDown">
+        <a target="_blank" href="https://cosh.work">
+            <img src="/img/cosh2.png" class="new_cosh_logo">
+        </a>
+    </div>
 </template>
 
 <style>
-.new-COSH {
-    width: 20%;
+.new_cosh {
+    .new_cosh_logo {
+        border: var(--card-border-color) 2px solid;
+        width: 50px;
+        /* background-color: var(--card-bg-color); */
+        padding: 2px;
+        border-radius: 5px;
+        transition: all 0.5s;
+        user-select: none;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: var(--card-bg-color);
+        }
+    }
 }
 </style>

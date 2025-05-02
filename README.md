@@ -1,35 +1,36 @@
-# home2
+# 个人主页项目
 
-This template should help get you started developing with Vue 3 in Vite.
+这是一个可配置的个人主页项目，支持自定义内容和插件扩展。
 
-## Recommended IDE Setup
+## 配置说明
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+所有配置文件位于 `public/config` 目录下：
 
-## Customize configuration
+- `site.json`: 网站基本信息配置
+- 其他配置文件...
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## 自定义内容
 
-## Project Setup
+1. 修改网站信息
+编辑 `public/config/site.json` 文件，可以自定义：
 
-```sh
+- 网站名称
+- 个人信息
+- 导航菜单
+- 社交媒体链接
+
+2. 开发插件
+在 `src/plugins` 目录下创建新的插件目录，详见插件开发指南。
+
+## 开发说明
+
+```bash
+# 安装依赖
 pnpm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# 开发模式运行
 pnpm dev
-```
 
-### Compile and Minify for Production
-
-```sh
+# 构建项目
 pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
 ```
