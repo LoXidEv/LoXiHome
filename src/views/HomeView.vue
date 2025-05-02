@@ -1,6 +1,6 @@
 <script setup>
 import Profile from '@/components/Profile.vue';
-import CodeTime from '@/components/CodeTime.vue';
+import CodeTime from '@/components/Codetime.vue';
 import COSH from '@/components/COSH.vue';
 import Contact from '@/components/Contact.vue';
 import Navbar from '@/components/Navbar.vue';
