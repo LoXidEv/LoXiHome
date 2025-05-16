@@ -39,7 +39,7 @@ export default {
     <div class="animate__animated animate__fadeIn"
         style="display: flex;justify-content: center;align-items: center;flex-direction: column;gap: 8px">
         <div class="new_title animate__animated animate__fadeInDown">
-            Draw
+            Art
             <div style="font-size: 14px;opacity: 0.6;">By Verlan</div>
         </div>
         <RouterLink class="new_router animate__animated animate__fadeInLeft" to="/">

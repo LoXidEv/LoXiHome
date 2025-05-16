@@ -1,12 +1,12 @@
 <template>
     <RouterLink class="new_router animate__animated animate__fadeInLeft" style="margin-top: 5px;" to="/draw">
-        Draw by Verlan
+        Art by Verlan
     </RouterLink>
     <RouterLink class="new_router animate__animated animate__fadeInLeft" style="margin-top: 5px;" to="/talk">
         LoXi's Talk
     </RouterLink>
-    <!-- <RouterLink class="new_router animate__animated animate__fadeInLeft" style="margin-top: 5px;" to="/message-board">
-        One word
+    <!-- <RouterLink class="new_router animate__animated animate__fadeInLeft" style="margin-top: 5px;" to="/projects">
+        My Projects
     </RouterLink> -->
 </template>
 
@@ -26,7 +26,7 @@
     width: 170px;
 
     &:hover {
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
         background-color: var(--card-bg-color-hover);
     }
 }

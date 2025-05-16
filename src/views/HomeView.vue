@@ -23,8 +23,8 @@ import Navbar from '@/components/Navbar.vue';
   border-radius: 8px;
   position: absolute;
   --webkit-user-drag: none;
-  width: 400px;
-  top: -35px;
+  width: 450px;
+  top: -70px;
   right: -100px;
   z-index: -9;
   /* filter: blur(1px); */

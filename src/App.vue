@@ -1,8 +1,10 @@
-<script>
+<script setup>
+import Music from '@/components/Music.vue'
 </script>
 
 <template>
   <main class="main">
+    <Music />
     <div class="width">
       <RouterView />
     </div>
