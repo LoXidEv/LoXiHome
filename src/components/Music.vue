@@ -10,13 +10,15 @@ export default {
             currentTime: 0,
             duration: 0,
             volume: 0.5, // 默认音量80%
-            isCollapsed: false // 添加折叠状态变量
+            isCollapsed: false, // 添加折叠状态变量
+            imageLoaded: false, // 添加图片加载状态
+            prevSongPic: '' // 保存上一首歌曲的封面
         }
     },
     computed: {
         currentSong() {
             return this.playlist[this.currentIndex] || {
-                name: '加载中...',
+                name: 'Loading...',
                 artist: '',
                 url: '',
                 pic: ''
@@ -29,6 +31,10 @@ export default {
             try {
                 const response = await axios.get('https://api.injahow.cn/meting/?type=playlist&id=13721484522')
                 this.playlist = response.data
+                // 预加载第一首歌的封面
+                if (this.playlist.length > 0) {
+                    this.preloadImage(this.playlist[0].pic)
+                }
             } catch (error) {
                 console.error('获取播放列表失败:', error)
             }
@@ -43,16 +49,50 @@ export default {
             this.isPlaying = !this.isPlaying
         },
         nextSong() {
+            // 保存当前封面作为上一首
+            this.prevSongPic = this.currentSong.pic
+            this.imageLoaded = false
+
             this.currentIndex = (this.currentIndex + 1) % this.playlist.length
             if (this.isPlaying) {
                 this.isPlaying = false
             }
+
+            // 强制重新加载图片
+            setTimeout(() => {
+                this.preloadImage(this.currentSong.pic)
+            }, 50)
         },
         prevSong() {
+            // 保存当前封面作为上一首
+            this.prevSongPic = this.currentSong.pic
+            this.imageLoaded = false
+
             this.currentIndex = (this.currentIndex - 1 + this.playlist.length) % this.playlist.length
             if (this.isPlaying) {
                 this.isPlaying = false
             }
+
+            // 强制重新加载图片
+            setTimeout(() => {
+                this.preloadImage(this.currentSong.pic)
+            }, 50)
+        },
+        // 图片预加载
+        preloadImage(src) {
+            if (!src) return
+
+            // 强制重置加载状态
+            this.imageLoaded = false
+
+            const img = new Image()
+            img.onload = () => {
+                // 添加延迟以确保动画效果可见
+                setTimeout(() => {
+                    this.imageLoaded = true
+                }, 200)
+            }
+            img.src = src
         },
         // 进度条相关
         onTimeUpdate(e) {
@@ -83,6 +123,14 @@ export default {
     },
     mounted() {
         this.fetchPlaylist()
+    },
+    watch: {
+        // 监听当前歌曲变化，预加载封面
+        'currentIndex': function () {
+            if (this.currentSong && this.currentSong.pic) {
+                this.preloadImage(this.currentSong.pic)
+            }
+        }
     }
 }
 </script>
@@ -98,7 +146,13 @@ export default {
 
         <div class="player-content" :class="{ 'hidden': isCollapsed }">
             <div class="player-info">
-                <img :src="currentSong.pic" :alt="currentSong.name" class="cover-img">
+                <div class="cover-container">
+                    <!-- 上一首歌曲封面（模糊背景） -->
+                    <img v-if="prevSongPic" :src="prevSongPic" class="prev-cover-img" alt="Previous cover">
+                    <!-- 当前歌曲封面 -->
+                    <img :src="currentSong.pic" :alt="currentSong.name" class="cover-img"
+                        :class="{ 'loaded': imageLoaded }" :key="currentSong.pic">
+                </div>
                 <div>
                     <div class="song_title">{{ currentSong.name }}</div>
                     <div class="song_author">{{ currentSong.artist }}</div>
@@ -212,18 +266,40 @@ export default {
     padding: 0;
 }
 
-.cover-img {
+.cover-container {
+    position: relative;
     width: 60px;
     height: 60px;
     border-radius: 8px;
+    overflow: hidden;
     margin-right: 8px;
-    -webkit-user-drag: none;
-    /* transition: all 0.5s;
-    filter: blur(4px);
+}
 
-    &:hover {
-        filter: blur(0px);
-    } */
+.prev-cover-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px);
+    transform: scale(1.1);
+    /* 稍微放大以避免模糊边缘 */
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+}
+
+.cover-img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    -webkit-user-drag: none;
+    filter: blur(10px);
+    transition: filter 0.8s ease;
+    z-index: 2;
+}
+
+.cover-img.loaded {
+    filter: blur(0);
 }
 
 .song_title {
