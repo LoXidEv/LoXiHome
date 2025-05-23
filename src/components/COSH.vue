@@ -8,6 +8,7 @@ export default {
     <div class="new_cosh animate__animated animate__fadeInDown">
         <a target="_blank" href="https://cosh.work">
             <img src="/img/cosh2.png" class="new_cosh_logo">
+            <!-- COSH -->
         </a>
     </div>
 </template>
@@ -16,8 +17,8 @@ export default {
 .new_cosh {
     .new_cosh_logo {
         border: var(--card-border-color) 2px solid;
-        width: 50px;
-        /* background-color: var(--card-bg-color); */
+        width: 35px;
+        background-color: #ffffffe8;
         padding: 2px;
         border-radius: 5px;
         transition: all 0.5s;

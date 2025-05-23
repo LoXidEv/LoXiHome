@@ -4,6 +4,7 @@
 <template>
     <div class="new_profile_p">
         <div class="new_profile_bg-blur"></div>
+        <!-- <img src="/img/chc.webp" class="new_bg"></img> -->
         <div class="new_profile_desc animate__animated animate__fadeIn animate__slow animate__delay-1s">
             Frontend-Developer
             <br>
@@ -23,6 +24,16 @@
     /* overflow: hidden; */
     display: flex;
     flex-direction: column;
+
+    /* .new_bg {
+        position: absolute;
+        top: -60px;
+        left: 60px;
+        width: 150px;
+        border-radius: 8px;
+        opacity: 0.9;
+        z-index: -9;
+    } */
 
     .new_profile_bg-blur {
         z-index: -8;
