@@ -24,7 +24,7 @@ import Navbar from '@/components/Navbar.vue';
   position: absolute;
   --webkit-user-drag: none;
   width: 450px;
-  top: -70px;
+  top: -60px;
   right: -100px;
   z-index: -9;
   /* filter: blur(1px); */

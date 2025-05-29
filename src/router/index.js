@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import website from '@/config/website.json'
 import HomeView from '@/views/HomeView.vue'
-// import ProjectView from '@/views/ProjectView.vue'
+import BiologicalView from '@/views/BiologicalView.vue'
 import DrawView from '@/views/DrawView.vue'
 import TalkView from '@/views/TalkView.vue'
 
@@ -18,12 +18,12 @@ const router = createRouter({
       path: '/talk',
       name: 'Talk',
       component: TalkView
+    },
+    {
+      path: '/biological',
+      name: 'Biological',
+      component: BiologicalView
     }
-    // {
-    //   path: '/projects',
-    //   name: 'Project',
-    //   component: ProjectView
-    // }
   ]
 })
 

@@ -83,4 +83,21 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+
+.new_card {
+  border: var(--card-border-color) 2px solid;
+  /* text-align: center; */
+  /* font-size: 28px; */
+  /* line-height: 1; */
+  /* font-weight: bold; */
+  /* background-color: var(--card-bg-color); */
+  padding: 8px 16px;
+  /* display: block; */
+  border-radius: 8px;
+
+  .new_card_title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
 </style>

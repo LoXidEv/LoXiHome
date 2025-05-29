@@ -5,9 +5,9 @@
     <RouterLink class="new_router animate__animated animate__fadeInLeft" style="margin-top: 5px;" to="/talk">
         LoXi's Talk
     </RouterLink>
-    <!-- <RouterLink class="new_router animate__animated animate__fadeInLeft" style="margin-top: 5px;" to="/projects">
-        My Projects
-    </RouterLink> -->
+    <RouterLink class="new_router animate__animated animate__fadeInLeft" style="margin-top: 5px;" to="/biological">
+        Biological
+    </RouterLink>
 </template>
 
 <style>
@@ -24,6 +24,7 @@
     transition: all 0.5s;
     font-size: 14px;
     width: 170px;
+    font-family: 'Poppins SemiBold';
 
     &:hover {
         /* transform: scale(1.1); */
