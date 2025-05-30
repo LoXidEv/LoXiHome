@@ -22,8 +22,13 @@ export default {
     },
     methods: {
         OneMath() {
+            this.OneConfig.Result = []
             this.Notice = ""
-            this.Notice = this.FormatNumber(this.OneConfig.AA, this.OneConfig.Aa, this.OneConfig.aa)
+
+            if (this.FormatNumber(this.OneConfig.AA, this.OneConfig.Aa, this.OneConfig.aa)) {
+                this.Notice = this.FormatNumber(this.OneConfig.AA, this.OneConfig.Aa, this.OneConfig.aa)
+                return
+            }
 
             const { AA, Aa, aa } = this.PercentMath(this.OneConfig.AA, this.OneConfig.Aa, this.OneConfig.aa)
             // console.log(AA, Aa, aa, this.GameteMath(AA, Aa, aa))
