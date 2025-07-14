@@ -57,7 +57,7 @@ export default {
             } else if (AA + Aa + aa == 100) {
                 return "";
             } else {
-                return "Error: Unkown Error"
+                return "Error: Unknown Error"
             }
         },
         PercentMath(AA, Aa, aa) {

@@ -44,8 +44,8 @@
         width: 193px;
         padding: 4px 4px 4px 0;
         border-radius: 8px;
-        background-color: rgba(255, 255, 255);
-        opacity: 0.8;
+        /* background-color: rgba(255, 255, 255); */
+        backdrop-filter: blur(4px);
         filter: blur(8px);
     }
 
