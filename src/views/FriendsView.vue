@@ -14,24 +14,39 @@ export default {
         <RouterLink class="new_router animate__animated animate__fadeInLeft" to="/">
             Back Home
         </RouterLink>
-        <div class="friends">
-            <div class="bgblur">
-                <img class="friends_item logo" src="/img/friends/sar_logo.webp" alt="SAR Logo">
-                <img class="friends_item loxi" src="/img/friends/lx.webp" alt="LoXi">
-                <img class="friends_item xl" src="/img/friends/xl.webp" alt="Star">
-                <img class="friends_item ml" src="/img/friends/ml.webp" alt="Raisugeo">
-                <img class="friends_item mg" src="/img/friends/mg.webp" alt="Mugu">
+        <div class="overflow">
+            <div class="friends">
+                <div class="bgblur">
+                    <img class="friends_item logo" src="/img/friends/sar_logo.webp" alt="SAR Logo">
+                    <img class="friends_item loxi" src="/img/friends/lx.webp" alt="LoXi">
+                    <img class="friends_item xl" src="/img/friends/xl.webp" alt="Star">
+                    <img class="friends_item ml" src="/img/friends/ml.webp" alt="Raisugeo">
+                    <img class="friends_item mg" src="/img/friends/mg.webp" alt="Mugu">
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+.overflow {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* border-radius: 8px; */
+    /* width: 320px; */
+}
+
+@media screen and (max-width: 650px) {
+    .overflow {
+        width: 320px;
+    }
+}
+
 .friends {
     position: relative;
     z-index: 1;
     min-width: 600px;
-    overflow: hidden;
     background-image: url('https://cosh.work/new/img/star.webp');
     height: 200px;
     border-radius: 8px;
