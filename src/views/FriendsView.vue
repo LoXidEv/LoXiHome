@@ -20,10 +20,18 @@ const friends = [
     { class: 'friends_item tb', src: '/img/friends/animals/tb.webp', alt: 'TB' },
     { class: 'friends_item fan', src: '/img/friends/animals/fan.webp', alt: 'Fan' },
     { class: 'friends_item bin', src: '/img/friends/animals/bin.webp', alt: 'Bin' },
-    { class: 'friends_item bin', src: '/img/friends/animals/bin.webp', alt: 'Bin' },
     { class: 'friends_item kyy', src: '/img/friends/animals/kyy.webp', alt: 'KYY' },
     { class: 'friends_item ian', src: '/img/friends/animals/ian.webp', alt: 'Ian' },
-    { class: 'friends_item xuan', src: '/img/friends/animals/xuan.webp', alt: 'Xuan' }
+    { class: 'friends_item xuan', src: '/img/friends/animals/xuan.webp', alt: 'Xuan' },
+    { class: 'friends_item dmy', src: '/img/friends/animals/dmy.webp', alt: 'DMY' },
+    { class: 'friends_item mmml', src: '/img/friends/animals/mmml.webp', alt: 'MMML' },
+    { class: 'friends_item wz', src: '/img/friends/animals/wz.webp', alt: 'WZ' },
+    { class: 'friends_item xc', src: '/img/friends/animals/xc.webp', alt: 'XC' },
+    { class: 'friends_item xz', src: '/img/friends/animals/xz.webp', alt: 'XZ' },
+    { class: 'friends_item yb', src: '/img/friends/animals/yb.webp', alt: 'YB' },
+    { class: 'friends_item chua', src: '/img/friends/animals/chua.webp', alt: 'Chua' },
+    { class: 'friends_item lm', src: '/img/friends/animals/lm.webp', alt: 'LM' },
+    { class: 'friends_item zzdev', src: '/img/friends/animals/zzdev.webp', alt: 'ZZDEV' },
 ];
 </script>
 
@@ -53,7 +61,7 @@ const friends = [
     transition: all 0.3s;
     overflow-x: hidden;
     overflow-y: hidden;
-    width: 1200px;
+    width: 1400px;
     /* border-radius: 8px; */
     /* width: 320px; */
 }
@@ -76,10 +84,10 @@ const friends = [
     transition: all 0.3s;
     position: relative;
     z-index: 1;
-    min-width: 1200px;
+    min-width: 1400px;
     /* background-image: url('/img/friends/th.webp'); */
     background-image: url('https://cosh.work/new/img/star.webp');
-    height: 300px;
+    height: 380px;
     border-radius: 8px;
     box-shadow: 0 0 4px 0 var(--text-color);
     background-position: center;
@@ -91,7 +99,7 @@ const friends = [
         position: relative;
         z-index: 2;
         width: 100%;
-        height: 300px;
+        height: 380px;
         backdrop-filter: blur(8px);
     }
 
@@ -103,20 +111,21 @@ const friends = [
 
     .logo {
         width: 500px;
-        left: 350px;
+        left: 450px;
     }
 
     .loxi {
         /* z-index: 99; */
         width: 65px;
         bottom: 10px;
-        left: 565px;
+        left: 665px;
     }
 
     .mg {
+        z-index: 97;
         width: 65px;
         bottom: 10px;
-        left: 650px;
+        left: 755px;
         transform: scaleX(-1);
     }
 
@@ -124,64 +133,64 @@ const friends = [
         z-index: 98;
         width: 80px;
         bottom: 10px;
-        left: 480px;
+        left: 580px;
     }
 
     .xl {
         width: 60px;
         bottom: 10px;
-        left: 410px;
+        left: 510px;
     }
 
     .cosmo {
         width: 60px;
         bottom: 10px;
-        left: 340px;
+        left: 440px;
     }
 
     .dk {
         width: 50px;
         bottom: 10px;
-        left: 785px;
+        left: 885px;
     }
 
     .lz {
         z-index: 99;
         width: 70px;
         bottom: 10px;
-        left: 300px;
+        left: 400px;
     }
 
     .z0 {
         width: 55px;
         bottom: 10px;
-        left: 740px;
+        left: 840px;
     }
 
     .oiklm {
         width: 60px;
         bottom: 10px;
-        left: 530px;
+        left: 630px;
     }
 
     .qn {
         width: 50px;
         bottom: 10px;
-        left: 380px;
+        left: 480px;
     }
 
     .cat {
         z-index: 97;
         width: 65px;
         bottom: 10px;
-        left: 260px;
+        left: 360px;
     }
 
     .ch {
         z-index: 97;
         width: 65px;
         bottom: 10px;
-        left: 900px;
+        left: 1000px;
         transform: scaleX(-1);
     }
 
@@ -189,33 +198,34 @@ const friends = [
         z-index: 99;
         width: 45px;
         bottom: 10px;
-        left: 460px;
+        left: 560px;
     }
 
     .mmz {
         width: 70px;
         bottom: 10px;
-        left: 860px;
+        left: 960px;
         transform: scaleX(-1);
     }
 
     .qe {
         width: 50px;
         bottom: 10px;
-        left: 820px;
+        left: 920px;
         transform: scaleX(-1);
     }
 
     .cml {
         width: 100px;
         bottom: 10px;
-        left: 220px;
+        left: 320px;
     }
 
     .tb {
+        z-index: 98;
         width: 65px;
         bottom: 10px;
-        left: 690px;
+        left: 790px;
         transform: scaleX(-1);
     }
 
@@ -223,7 +233,7 @@ const friends = [
         z-index: 99;
         width: 70px;
         bottom: 10px;
-        left: 970px;
+        left: 1070px;
         transform: scaleX(-1);
     }
 
@@ -232,27 +242,90 @@ const friends = [
         width: 85px;
         bottom: 10px;
         transform: scaleX(-1);
-        left: 935px;
+        left: 1035px;
     }
 
     .kyy {
         width: 55px;
         bottom: 10px;
-        left: 150px;
+        left: 250px;
     }
 
     .xuan {
         width: 50px;
         bottom: 10px;
-        left: 190px;
+        left: 290px;
     }
 
     .ian {
         z-index: 96;
-        width: 80px;
+        width: 75px;
         bottom: 10px;
         transform: scaleX(-1);
-        left: 1010px;
+        left: 1110px;
+    }
+
+    .dmy {
+        z-index: 95;
+        width: 45px;
+        bottom: 10px;
+        left: 110px;
+    }
+
+
+    .mmml {
+        width: 55px;
+        bottom: 10px;
+        left: 215px;
+    }
+
+    .wz {
+        width: 50px;
+        bottom: 10px;
+        left: 1170px;
+        transform: scaleX(-1);
+    }
+
+    .xc {
+        z-index: 94;
+        width: 60px;
+        bottom: 10px;
+        left: 135px;
+    }
+
+    .xz {
+        width: 52px;
+        bottom: 10px;
+        left: 180px;
+    }
+
+    .yb {
+        width: 70px;
+        bottom: 10px;
+        left: 1200px;
+        transform: scaleX(-1);
+    }
+
+    .chua {
+        z-index: 98;
+        width: 60px;
+        bottom: 10px;
+        left: 1290px;
+        transform: scaleX(-1);
+    }
+
+    .lm {
+        width: 55px;
+        bottom: 10px;
+        left: 1255px;
+        transform: scaleX(-1);
+    }
+
+    .zzdev {
+        width: 70px;
+        bottom: 10px;
+        left: 720px;
+        transform: scaleX(-1);
     }
 }
 </style>
