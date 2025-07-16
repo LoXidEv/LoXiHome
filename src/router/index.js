@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import website from '@/config/website.json'
 import HomeView from '@/views/HomeView.vue'
 import BiologicalView from '@/views/BiologicalView.vue'
+import FriendsView from '@/views/FriendsView.vue'
 import DrawView from '@/views/DrawView.vue'
 import TalkView from '@/views/TalkView.vue'
 
@@ -13,6 +14,11 @@ const router = createRouter({
       path: '/draw',
       name: 'Draw',
       component: DrawView
+    },
+    {
+      path: '/friends',
+      name: 'friends',
+      component: FriendsView
     },
     {
       path: '/talk',

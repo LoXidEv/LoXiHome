@@ -8,6 +8,9 @@
     <RouterLink class="new_router animate__animated animate__fadeInLeft" style="margin-top: 5px;" to="/biological">
         Biological
     </RouterLink>
+    <RouterLink class="new_router animate__animated animate__fadeInLeft" style="margin-top: 5px;" to="/friends">
+        Friends
+    </RouterLink>
 </template>
 
 <style>
