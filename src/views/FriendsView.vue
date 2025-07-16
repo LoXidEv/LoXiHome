@@ -32,6 +32,7 @@ const friends = [
     { class: 'friends_item chua', src: '/img/friends/animals/chua.webp', alt: 'Chua' },
     { class: 'friends_item lm', src: '/img/friends/animals/lm.webp', alt: 'LM' },
     { class: 'friends_item zzdev', src: '/img/friends/animals/zzdev.webp', alt: 'ZZDEV' },
+    { class: 'friends_item blue', src: '/img/friends/animals/blue.webp', alt: 'ZZDEV' },
 ];
 </script>
 
@@ -62,7 +63,7 @@ const friends = [
     overflow-x: hidden;
     overflow-y: hidden;
     width: 1400px;
-    /* border-radius: 8px; */
+    border-radius: 8px;
     /* width: 320px; */
 }
 
@@ -81,6 +82,7 @@ const friends = [
 }
 
 .friends {
+    overflow: hidden;
     transition: all 0.3s;
     position: relative;
     z-index: 1;
@@ -325,6 +327,13 @@ const friends = [
         width: 70px;
         bottom: 10px;
         left: 720px;
+        transform: scaleX(-1);
+    }
+
+    .blue {
+        width: 70px;
+        bottom: 10px;
+        left: 1330px;
         transform: scaleX(-1);
     }
 }
