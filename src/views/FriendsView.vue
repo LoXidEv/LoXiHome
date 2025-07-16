@@ -19,7 +19,11 @@ const friends = [
     { class: 'friends_item cml', src: '/img/friends/animals/cml.webp', alt: 'CML' },
     { class: 'friends_item tb', src: '/img/friends/animals/tb.webp', alt: 'TB' },
     { class: 'friends_item fan', src: '/img/friends/animals/fan.webp', alt: 'Fan' },
-    { class: 'friends_item bin', src: '/img/friends/animals/bin.webp', alt: 'Bin' }
+    { class: 'friends_item bin', src: '/img/friends/animals/bin.webp', alt: 'Bin' },
+    { class: 'friends_item bin', src: '/img/friends/animals/bin.webp', alt: 'Bin' },
+    { class: 'friends_item kyy', src: '/img/friends/animals/kyy.webp', alt: 'KYY' },
+    { class: 'friends_item ian', src: '/img/friends/animals/ian.webp', alt: 'Ian' },
+    { class: 'friends_item xuan', src: '/img/friends/animals/xuan.webp', alt: 'Xuan' }
 ];
 </script>
 
@@ -49,7 +53,7 @@ const friends = [
     transition: all 0.3s;
     overflow-x: hidden;
     overflow-y: hidden;
-    white-space: nowrap;
+    width: 1200px;
     /* border-radius: 8px; */
     /* width: 320px; */
 }
@@ -73,6 +77,7 @@ const friends = [
     position: relative;
     z-index: 1;
     min-width: 1200px;
+    /* background-image: url('/img/friends/th.webp'); */
     background-image: url('https://cosh.work/new/img/star.webp');
     height: 300px;
     border-radius: 8px;
@@ -87,7 +92,7 @@ const friends = [
         z-index: 2;
         width: 100%;
         height: 300px;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(8px);
     }
 
     .friends_item {
@@ -97,8 +102,8 @@ const friends = [
     }
 
     .logo {
-        width: 400px;
-        left: 400px;
+        width: 500px;
+        left: 350px;
     }
 
     .loxi {
@@ -141,6 +146,7 @@ const friends = [
     }
 
     .lz {
+        z-index: 99;
         width: 70px;
         bottom: 10px;
         left: 300px;
@@ -175,7 +181,7 @@ const friends = [
         z-index: 97;
         width: 65px;
         bottom: 10px;
-        left: 920px;
+        left: 900px;
         transform: scaleX(-1);
     }
 
@@ -189,14 +195,14 @@ const friends = [
     .mmz {
         width: 70px;
         bottom: 10px;
-        left: 875px;
+        left: 860px;
         transform: scaleX(-1);
     }
 
     .qe {
         width: 50px;
         bottom: 10px;
-        left: 830px;
+        left: 820px;
         transform: scaleX(-1);
     }
 
@@ -217,7 +223,7 @@ const friends = [
         z-index: 99;
         width: 70px;
         bottom: 10px;
-        left: 1000px;
+        left: 970px;
         transform: scaleX(-1);
     }
 
@@ -226,7 +232,27 @@ const friends = [
         width: 85px;
         bottom: 10px;
         transform: scaleX(-1);
-        left: 960px;
+        left: 935px;
+    }
+
+    .kyy {
+        width: 55px;
+        bottom: 10px;
+        left: 150px;
+    }
+
+    .xuan {
+        width: 50px;
+        bottom: 10px;
+        left: 190px;
+    }
+
+    .ian {
+        z-index: 96;
+        width: 80px;
+        bottom: 10px;
+        transform: scaleX(-1);
+        left: 1010px;
     }
 }
 </style>
