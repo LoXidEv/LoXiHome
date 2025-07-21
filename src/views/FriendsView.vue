@@ -32,7 +32,9 @@ const friends = [
     { class: 'friends_item chua', src: '/img/friends/animals/chua.webp', alt: 'Chua' },
     { class: 'friends_item lm', src: '/img/friends/animals/lm.webp', alt: 'LM' },
     { class: 'friends_item zzdev', src: '/img/friends/animals/zzdev.webp', alt: 'ZZDEV' },
-    { class: 'friends_item blue', src: '/img/friends/animals/blue.webp', alt: 'ZZDEV' },
+    { class: 'friends_item blue', src: '/img/friends/animals/blue.webp', alt: 'blue' },
+    { class: 'friends_item ym', src: '/img/friends/animals/ym.webp', alt: 'ym' },
+    { class: 'friends_item bh', src: '/img/friends/animals/bh.webp', alt: 'bh' },
 ];
 </script>
 
@@ -112,6 +114,7 @@ const friends = [
     }
 
     .logo {
+        top: 80px;
         width: 500px;
         left: 450px;
     }
@@ -141,13 +144,14 @@ const friends = [
     .xl {
         width: 60px;
         bottom: 10px;
-        left: 510px;
+        left: 520px;
+        transform: scaleX(-1);
     }
 
     .cosmo {
         width: 60px;
         bottom: 10px;
-        left: 440px;
+        left: 400px;
     }
 
     .dk {
@@ -160,7 +164,7 @@ const friends = [
         z-index: 99;
         width: 70px;
         bottom: 10px;
-        left: 400px;
+        left: 370px;
     }
 
     .z0 {
@@ -178,14 +182,14 @@ const friends = [
     .qn {
         width: 50px;
         bottom: 10px;
-        left: 480px;
+        left: 440px;
     }
 
     .cat {
         z-index: 97;
         width: 65px;
         bottom: 10px;
-        left: 360px;
+        left: 330px;
     }
 
     .ch {
@@ -218,9 +222,10 @@ const friends = [
     }
 
     .cml {
-        width: 100px;
+        z-index: 99;
+        width: 110px;
         bottom: 10px;
-        left: 320px;
+        left: 250px;
     }
 
     .tb {
@@ -250,13 +255,13 @@ const friends = [
     .kyy {
         width: 55px;
         bottom: 10px;
-        left: 250px;
+        left: 180px;
     }
 
     .xuan {
         width: 50px;
         bottom: 10px;
-        left: 290px;
+        left: 220px;
     }
 
     .ian {
@@ -271,14 +276,14 @@ const friends = [
         z-index: 95;
         width: 45px;
         bottom: 10px;
-        left: 110px;
+        left: 40px;
     }
 
 
     .mmml {
         width: 55px;
         bottom: 10px;
-        left: 215px;
+        left: 145px;
     }
 
     .wz {
@@ -292,13 +297,13 @@ const friends = [
         z-index: 94;
         width: 60px;
         bottom: 10px;
-        left: 135px;
+        left: 65px;
     }
 
     .xz {
         width: 52px;
         bottom: 10px;
-        left: 180px;
+        left: 110px;
     }
 
     .yb {
@@ -335,6 +340,18 @@ const friends = [
         bottom: 10px;
         left: 1330px;
         transform: scaleX(-1);
+    }
+
+    .ym{
+        width: 70px;
+        bottom: 10px;
+        left: 290px;
+    }
+
+    .bh{
+        width: 60px;
+        bottom: 10px;
+        left: 470px;
     }
 }
 </style>

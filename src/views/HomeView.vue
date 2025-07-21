@@ -8,7 +8,7 @@ import Navbar from '@/components/Navbar.vue';
 
 <template>
   <div class="animate__animated animate__fadeIn">
-    <img src="/img/LoXi_O.webp" alt="LoXi" class="new_profile_bg">
+    <img src="/img/LoXi_O_6.webp" alt="LoXi" class="new_profile_bg">
     <COSH />
     <Profile />
     <CodeTime />
@@ -24,8 +24,8 @@ import Navbar from '@/components/Navbar.vue';
   position: absolute;
   --webkit-user-drag: none;
   width: 450px;
-  top: -30px;
-  right: -100px;
+  /* top: -10px; */
+  right: -20px;
   z-index: -9;
   /* filter: blur(1px); */
 }

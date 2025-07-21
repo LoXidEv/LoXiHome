@@ -28,6 +28,11 @@ export default {
                     link: "/img/LoXi_O_3.webp",
                     text: "洛溪酷酷的！"
                 },
+                {
+                    name: "橘子の学术",
+                    link: "/img/LoXi_O_6.webp",
+                    text: "如何种橘子？"
+                },
             ]
         }
     }

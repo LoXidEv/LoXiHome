@@ -46,7 +46,7 @@
         border-radius: 8px;
         /* background-color: rgba(255, 255, 255); */
         backdrop-filter: blur(4px);
-        filter: blur(8px);
+        /* filter: blur(8px); */
     }
 
     .new_profile_desc {
