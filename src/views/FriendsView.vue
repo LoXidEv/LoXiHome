@@ -35,6 +35,7 @@ const friends = [
     { class: 'friends_item blue', src: '/img/friends/animals/blue.webp', alt: 'blue' },
     { class: 'friends_item ym', src: '/img/friends/animals/ym.webp', alt: 'ym' },
     { class: 'friends_item bh', src: '/img/friends/animals/bh.webp', alt: 'bh' },
+    { class: 'friends_item verlan', src: '/img/friends/animals/verlan.webp', alt: 'verlan' },
 ];
 </script>
 
@@ -352,6 +353,12 @@ const friends = [
         width: 60px;
         bottom: 10px;
         left: 470px;
+    }
+
+    .verlan{
+        width: 65px;
+        bottom: 10px;
+        left: -10px;
     }
 }
 </style>
