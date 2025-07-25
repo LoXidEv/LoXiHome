@@ -3,12 +3,14 @@ import Music from '@/components/Music.vue'
 </script>
 
 <template>
-  <main class="main">
+  <main class="main" v-if="$route.name !== 'video'">
     <Music />
     <div class="width">
       <RouterView />
     </div>
   </main>
+  
+  <RouterView v-else></RouterView>
 </template>
 
 <style>
@@ -38,6 +40,7 @@ import Music from '@/components/Music.vue'
 * {
   padding: 0;
   margin: 0;
+  scrollbar-width: none;
 }
 
 :root {

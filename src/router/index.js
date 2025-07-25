@@ -29,6 +29,11 @@ const router = createRouter({
       path: '/biological',
       name: 'Biological',
       component: BiologicalView
+    },
+    {
+      path: '/video',
+      name: 'video',
+      component: () => import('@/views/VideoView.vue')
     }
   ]
 })
