@@ -37,7 +37,7 @@ const contactLinkConfig = ref([{
                 <h1># About Me</h1>
                 <br>
                 <div class="about_intro">
-                    <img class="about_loxiOc" src="/img/LoXi_O_2.webp" alt="LoXi OC">
+                    <img class="about_loxiOc" src="https://avatars.githubusercontent.com/u/110319858?v=4" alt="LoXi OC">
                     <div class="about_intro_text">
                         <div class="about_intro_name">洛溪 LoXi (@LoXidEv)</div>
                         Frontend-Developer
@@ -140,13 +140,13 @@ const contactLinkConfig = ref([{
 
 .about_intro {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     gap: 8px;
 }
 
 @media screen and (max-width: 470px) {
     .width {
-        width: 100% !important;
+        width: 90% !important;
     }
 
     .about_intro {
