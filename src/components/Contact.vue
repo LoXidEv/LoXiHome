@@ -1,47 +1,35 @@
+<script>
+export default {
+    props: {
+        text: {
+            type: String,
+            default: '',
+        },
+        link: {
+            type: String,
+            default: '',
+        },
+    },
+}
+</script>
+
 <template>
-    <div class="new_contact">
-        <a class="new_contact_item animate__animated animate__fadeInLeft" target="_blank"
-            href="https://afdian.com/a/loxidev">
-            <img src="/img/afdian.svg" style="position: absolute;width: 35px;" class="new_contact_logo">
-        </a>
-        <a class="new_contact_item animate__animated animate__fadeInUp" target="_blank"
-            href="https://space.bilibili.com/1093209533">
-            <img src="/img/Bilibili.svg" class="new_contact_logo">
-        </a>
-        <a target="_blank" class="new_contact_item animate__animated animate__fadeInRight"
-            href="https://github.com/loxidev">
-            <img src="/img/github.svg" class="new_contact_logo">
-        </a>
-    </div>
+    <a :href="link" target="_blank" class="contact_link">{{ text }}</a>
 </template>
 
-<style>
-.new_contact {
-    width: 150px;
-    margin-top: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 4px;
+<style scoped>
+.contact_link {
+    color: var(--color-text);
+    text-decoration: none;
+    border: 2px solid #f0f0f0;
+    border-radius: var(--border-radius);
+    background-color: #ffffff99;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
 
-    .new_contact_item {
-        border: var(--card-border-color) 2px solid;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 8px;
-        border-radius: 8px;
-        background-color: var(--card-bg-color);
-        transition: all 0.5s;
 
-        &:hover {
-            /* transform: scale(1.1); */
-            background-color: var(--card-bg-color-hover);
-        }
-
-        .new_contact_logo {
-            width: 80%;
-        }
+    &:hover {
+        background-color: #f0f0f0cc;
     }
 }
 </style>

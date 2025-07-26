@@ -1,32 +1,66 @@
 <script setup>
-import Profile from '@/components/Profile.vue';
-import CodeTime from '@/components/Codetime.vue';
-import COSH from '@/components/COSH.vue';
-import Contact from '@/components/Contact.vue';
-import Navbar from '@/components/Navbar.vue';
+import ButtonBlur from '@/components/ButtonBlur.vue';
+import { ref } from 'vue'
+
+const routeConfig = ref([
+    {
+        path: '/',
+        name: 'home',
+    },
+    {
+        path: '/about',
+        name: 'about',
+    }
+])
 </script>
 
 <template>
-  <div class="animate__animated animate__fadeIn">
-    <img src="/img/LoXi_O_6.webp" alt="LoXi" class="new_profile_bg">
-    <COSH />
-    <Profile />
-    <CodeTime />
-    <Navbar />
-    <Contact />
-  </div>
+    <div class="home_main animate__animated animate__fadeIn">
+        <img src="/img/LoXi_O_6.webp" class="home_background" alt="LoXi Background">
+        <div class="home_text">
+            <img src="/img/LoXi_Logo.png" class="home_text_logo" alt="LoXi Logo">
+            <div class="home_text_title">洛溪 LoXi</div>
+            <div class="home_text_subtitle">
+                Some days you bloom, some days you grow roots. Both matter.
+            </div>
+            <ButtonBlur path="/about_me" text="About Me" />
+        </div>
+    </div>
 </template>
 
-<style>
-.new_profile_bg {
-  /* transition: all 0.5s; */
-  border-radius: 8px;
-  position: absolute;
-  --webkit-user-drag: none;
-  width: 450px;
-  /* top: -10px; */
-  right: -20px;
-  z-index: -9;
-  /* filter: blur(1px); */
+<style scoped>
+.home_main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.home_background {
+    filter: blur(4px);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+.home_text {
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.home_text_logo {
+    width: 240px;
+}
+
+.home_text_title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.home_text_subtitle{
+    margin-bottom: 10px;
 }
 </style>
