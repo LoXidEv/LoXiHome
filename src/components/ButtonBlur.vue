@@ -25,7 +25,7 @@ export default {
     padding: 4px 10px;
     font-family: 'Poppins SemiBold';
     color: var(--text-color);
-    border: 1px solid #f0f0f0;
+    border: 2px solid #f0f0f0;
     border-radius: var(--border-radius);
     background-color: #ffffff99;
     cursor: pointer;
