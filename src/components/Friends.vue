@@ -64,8 +64,8 @@ const friends = [
     position: relative;
     z-index: 1;
     min-width: 1400px;
-    /* background-image: url('/img/friends/th.webp'); */
-    background-image: url('https://cosh.work/new/img/star.webp');
+    background-image: url('/img/friends/th.webp');
+    /* background-image: url('https://cosh.work/new/img/star.webp'); */
     height: 380px;
     border-radius: 8px;
     box-shadow: 0 0 4px 0 var(--text-color);
