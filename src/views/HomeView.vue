@@ -16,7 +16,8 @@ const routeConfig = ref([
 
 <template>
     <div class="home_main animate__animated animate__fadeIn">
-        <img src="/img/LoXi_O_6.webp" class="home_background" alt="LoXi Background">
+        <img src="/img/LoXi_bg.webp" class="home_background" alt="LoXi Background">
+        <!-- <img src="/img/LoXi_O_6.webp" class="home_background" alt="LoXi Background"> -->
         <div class="home_text">
             <img src="/img/LoXi_Logo.png" class="home_text_logo" alt="LoXi Logo">
             <div class="home_text_title">洛溪 LoXi</div>
@@ -41,6 +42,7 @@ const routeConfig = ref([
     right: 0;
     bottom: 0;
     height: 100vh;
+    z-index: -1;
 }
 
 .home_text {
@@ -48,6 +50,8 @@ const routeConfig = ref([
     position: fixed;
     bottom: 0;
     left: 0;
+    /* border-radius: var(--border-radius); */
+    /* backdrop-filter: blur(4px); */
 }
 
 .home_text_logo {

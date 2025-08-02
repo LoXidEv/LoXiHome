@@ -43,15 +43,15 @@
 }
 
 :root {
-  --text-color: #2b3d4f;
-  --theme-color: #7da7d4;
+  --text-color: #474440;
+  --theme-color: #4664b0;
   --border-radius: 8px;
 }
 
 body {
   font-family: 'Poppins SemiBold';
   min-width: 320px;
-  color: #2b3d4f;
+  color: var(--text-color);
   background-color: #ffffff;
 }
 </style>
