@@ -52,6 +52,7 @@ const friends = [
 
 <style scoped>
 .overflow {
+    margin: 20px 0;
     transition: all 0.3s;
     overflow-y: hidden;
     width: 100%;
@@ -79,13 +80,13 @@ const friends = [
         z-index: 2;
         width: 100%;
         height: 380px;
-        backdrop-filter: blur(8px);
+        /* backdrop-filter: blur(8px); */
     }
 
     .friends_item {
         position: absolute;
         z-index: 3;
-        filter: drop-shadow(0 0 8px var(--theme-color-2-oc));
+        bottom: -1px !important;
     }
 
     .logo {

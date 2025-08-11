@@ -131,7 +131,7 @@ export default {
     transition: background-color 0.3s;
     padding: 0 8px;
     outline: none;
-    font-family: 'Poppins SemiBold';
+    font-family: 'Poppins Regular';
     color: #2b3d4f;
 
     &:focus {

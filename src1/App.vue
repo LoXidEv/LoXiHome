@@ -22,7 +22,7 @@ import Music from '@/components/Music.vue'
 }
 
 @font-face {
-  font-family: 'Poppins SemiBold';
+  font-family: 'Poppins Regular';
   /* font-style: normal;
   font-weight: 400; */
   src: url('/font/Poppins-SemiBold.ttf');
@@ -54,7 +54,7 @@ import Music from '@/components/Music.vue'
 }
 
 body {
-  font-family: 'Poppins SemiBold';
+  font-family: 'Poppins Regular';
   min-width: 320px;
   color: #2b3d4f;
   background-color: #fff;

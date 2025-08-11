@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-family: 'Poppins SemiBold';
+  font-family: 'Poppins Regular';
   /* font-style: normal;
   font-weight: 400; */
   src: url('/font/Poppins-SemiBold.ttf');
@@ -49,7 +49,7 @@
 }
 
 body {
-  font-family: 'Poppins SemiBold';
+  font-family: 'Poppins Regular';
   min-width: 320px;
   color: var(--text-color);
   background-color: #ffffff;

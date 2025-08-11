@@ -22,8 +22,9 @@ export default {
     color: var(--color-text);
     text-decoration: none;
     border: 2px solid #f0f0f0;
+    text-align: center;
     border-radius: var(--border-radius);
-    background-color: #ffffff99;
+    background-color: #ffffffd8;
     padding: 5px 10px;
     transition: background-color 0.3s;
 

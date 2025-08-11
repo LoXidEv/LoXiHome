@@ -22,12 +22,12 @@ export default {
 <style scoped>
 .button_blur{
     min-width: 100px;
-    padding: 4px 10px;
-    font-family: 'Poppins SemiBold';
+    padding: 8px 16px;
+    font-family: 'Poppins Regular';
     color: var(--text-color);
     border: 2px solid #f0f0f0;
     border-radius: var(--border-radius);
-    background-color: #ffffff99;
+    background-color: #ffffff;
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
     

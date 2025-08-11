@@ -27,7 +27,7 @@
     transition: all 0.5s;
     font-size: 14px;
     width: 170px;
-    font-family: 'Poppins SemiBold';
+    font-family: 'Poppins Regular';
 
     &:hover {
         /* transform: scale(1.1); */

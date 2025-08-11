@@ -1,19 +1,20 @@
 <script setup>
-import ImageCard from '@/components/ImageCard.vue'
+// import ImageCard from '@/components/ImageCard.vue'
 import RouteNamePage from '@/components/RouteNamePage.vue'
 import Contact from '@/components/Contact.vue'
 import Friends from '@/components/Friends.vue'
 import { ref } from 'vue'
+import COSH from '@/components/COSH.vue'
 
-const imageCardConfig = ref([{
-    src: '/img/LoXi_O.webp',
-    title: '',
-    subtitle: '',
-}, {
-    src: '/img/LoXi_O_6.webp',
-    title: '',
-    subtitle: '',
-}])
+// const imageCardConfig = ref([{
+//     src: '/img/LoXi_O.webp',
+//     title: '',
+//     subtitle: '',
+// }, {
+//     src: '/img/LoXi_O_6.webp',
+//     title: '',
+//     subtitle: '',
+// }])
 
 const contactLinkConfig = ref([{
     title: 'GitHub',
@@ -25,12 +26,11 @@ const contactLinkConfig = ref([{
     title: 'Bilibili',
     link: 'https://space.bilibili.com/1093209533',
 }])
-
 </script>
 
 <template>
     <div class="about_main animate__animated animate__fadeIn">
-        <img src="/img/LoXi_Logo.png" class="about_logo" alt="LoXi Logo">
+        <img src="/img/LoXi_O_6.webp" class="about_logo" alt="LoXi Logo">
         <div class="about_content">
             <div class="width">
                 <RouteNamePage />
@@ -39,30 +39,31 @@ const contactLinkConfig = ref([{
                 <div class="about_intro">
                     <img class="about_loxiOc" src="https://avatars.githubusercontent.com/u/110319858?v=4" alt="LoXi OC">
                     <div class="about_intro_text">
-                        <div class="about_intro_name">洛溪 LoXi (@LoXidEv)</div>
+                        <div class="about_intro_name">洛溪 LoXi</div>
                         Frontend-Developer
                         <br>
-                        Student & COSH Owner
-                        <a class="about_cosh" href="https://cosh.work">
-                            <img width="25px" src="/img/logo_cosh_dark.svg" alt="COSH Logo">
+                        Student & COSH Member
+                        <!-- <a class="about_cosh" href="https://cosh.work">
+                            <img width="20px" src="/img/logo_cosh_dark.svg" alt="COSH Logo">
                             cosh.work
-                        </a>
+                        </a> -->
                     </div>
                 </div>
                 <div class="about_contact">
                     <Contact v-for="item in contactLinkConfig" :key="item.link" :text="item.title" :link="item.link" />
                 </div>
-                <div class="about_draw">
+                <COSH />
+                <!-- <div class="about_draw">
                     <img src="/img/verlan.webp" class="about_draw_img" alt="Verlan">
                     <div>
                         <div class="about_draw_title">OC 画集</div>
-                        <div class="about_draw_subtitle">由 Verlan 创作</div>
+                        <div class="about_draw_subtitle">感谢 Verlan 的创作</div>
                     </div>
                 </div>
                 <div class="about_draw_content">
                     <ImageCard v-for="item in imageCardConfig" :key="item.src" :src="item.src" :title="item.title"
                         :subtitle="item.subtitle" />
-                </div>
+                </div> -->
                 <Friends />
             </div>
         </div>
@@ -100,19 +101,19 @@ const contactLinkConfig = ref([{
     width: 100%;
     margin: 20px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
-.about_draw_content {
+/* .about_draw_content {
     width: 100%;
     margin: 20px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 3fr));
     gap: 10px;
-}
+} */
 
-.about_draw_img {
+/* .about_draw_img {
     width: 60px;
 }
 
@@ -120,9 +121,9 @@ const contactLinkConfig = ref([{
     line-height: 1;
     font-size: 20px;
     font-weight: bold;
-}
+} */
 
-.about_draw_subtitle {
+/* .about_draw_subtitle {
     opacity: 0.6;
 }
 
@@ -136,7 +137,7 @@ const contactLinkConfig = ref([{
     background-color: #ffffff;
     margin-top: 20px;
     padding: 10px;
-}
+} */
 
 .about_intro {
     display: flex;
@@ -144,13 +145,21 @@ const contactLinkConfig = ref([{
     gap: 8px;
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 1024px) {
     .width {
         width: 90% !important;
     }
 
     .about_intro {
         flex-wrap: wrap;
+    }
+
+    .about_content {
+        justify-content: center;
+    }
+
+    .about_logo {
+        width: 100%;
     }
 }
 
@@ -166,7 +175,6 @@ const contactLinkConfig = ref([{
 
 .about_content {
     display: flex;
-    justify-content: center;
 
     h1 {
         font-family: 'HooskaiChamferedSquare Regular';
@@ -174,17 +182,18 @@ const contactLinkConfig = ref([{
 }
 
 .about_logo {
-    filter: blur(4px);
+    opacity: 0.2;
     z-index: -1;
-    width: 320px;
+    height: 100%;
+    right: 0;
+    /* width: 100%; */
+    object-fit: cover;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .width {
     padding: 20px;
-    width: 60%;
+    width: 50%;
+    transition: all 0.3s;
 }
 </style>

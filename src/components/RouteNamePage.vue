@@ -6,7 +6,7 @@ export default {
                 {
                     name: 'home',
                     path: '/',
-                    text: 'LoXi 洛溪',
+                    text: '洛溪 LoXi',
                 },
                 {
                     name: 'about',

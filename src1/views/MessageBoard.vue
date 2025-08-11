@@ -97,7 +97,7 @@ export default {
     /* outline: none; */
     color: var(--text-color);
     transition: all 0.5s;
-    font-family: 'Poppins SemiBold';
+    font-family: 'Poppins Regular';
 
     &:hover {
         background-color: var(--card-bg-color-hover);
@@ -123,7 +123,7 @@ export default {
     outline: none;
     color: var(--text-color);
     transition: all 0.5s;
-    font-family: 'Poppins SemiBold';
+    font-family: 'Poppins Regular';
 
     &:focus {
         border: var(--card-border-color) 2px solid;
