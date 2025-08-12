@@ -68,6 +68,8 @@ const routeConfig = ref([
 }
 
 .home_text_subtitle {
+    text-align: center;
+    padding: 0 20px;
     margin-bottom: 20px;
 }
 </style>
