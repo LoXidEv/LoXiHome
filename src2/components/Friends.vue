@@ -52,11 +52,11 @@ const friends = [
 
 <style scoped>
 .overflow {
+    margin: 20px 0;
     transition: all 0.3s;
     overflow-y: hidden;
     width: 100%;
     border-radius: 8px;
-    scrollbar-width: thin;
 }
 
 .friends {

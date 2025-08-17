@@ -45,7 +45,7 @@
 }
 
 .cosh_link {
-    color: var(--theme-color);
+    color: #4664b0;
     text-decoration: none;
     transition: all 0.3s;
 
@@ -67,7 +67,7 @@
 }
 
 .cosh_worker_title {
-    font-family: 'HooskaiChamferedSquare';
+    font-family: 'HooskaiChamferedSquare Regular';
     font-weight: bold;
     font-size: 20px;
     margin-left: -2px;
@@ -89,8 +89,9 @@
 }
 
 .cosh_worker_main {
+    background-color: #ffffff;
     padding: 10px;
-    border: 4px var(--theme-color-2) solid;
+    border: 4px #f0f0f0a2 solid;
     border-radius: 8px;
 }
 </style>

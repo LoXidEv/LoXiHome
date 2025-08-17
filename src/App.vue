@@ -1,57 +1,136 @@
 <script setup>
+import Navbar from '@/components/UI/Navbar.vue';
+import CFooter from '@/components/UI/Footer.vue';
+import { ref } from 'vue'
+
+const contactLinkConfig = ref([{
+  name: 'GitHub',
+  link: 'https://github.com/loxidev',
+}, {
+  name: 'Afdian',
+  link: 'https://afdian.com/a/loxidev',
+}, {
+  name: 'Bilibili',
+  link: 'https://space.bilibili.com/1093209533',
+}])
 </script>
 
 <template>
-  <RouterView></RouterView>
+  <div class="loxi_main animate__animated animate__fadeIn">
+    <div class="loxi_author">
+      <div class="loxi_blur"></div>
+      <div class="loxi_padding">
+        <img src="/img/LoXi_Logo.png" alt="LoXi Logo" class="author_logo animate__animated animate__pulse" />
+        <!-- <div class="author_name">洛溪 LoXi</div> -->
+        <div class="author_desc animate__animated animate__fadeInUp animate__delay-1s">Some days you bloom,<br>some days
+          you grow roots.<br>Both matter.</div>
+        <div class="author_contact animate__animated animate__fadeInUp animate__delay-2s">
+          <a target="_blank" v-for="item in contactLinkConfig" :href="item.link" class="contact_link">{{ item.name
+          }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="loxi_page">
+      <Navbar />
+      <div class="loxi_view">
+        <RouterView></RouterView>
+      </div>
+      <CFooter />
+    </div>
+  </div>
 </template>
 
 <style>
-@font-face {
-  font-family: 'HooskaiChamferedSquare Regular';
-  /* font-style: normal;
-  font-weight: 400; */
-  src: url('/font/HooskaiChamferedSquare-Regular.ttf');
+.loxi_view{
+  padding: 0 20px;
 }
 
-@font-face {
-  font-family: 'Poppins Bold';
-  /* font-style: normal;
-  font-weight: 400; */
-  src: url('/font/Poppins-Bold.ttf');
+.loxi_page{
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
-@font-face {
-  font-family: 'Poppins Regular';
-  /* font-style: normal;
-  font-weight: 400; */
-  src: url('/font/Poppins-SemiBold.ttf');
+.contact_link {
+  text-decoration: none;
+  color: var(--theme-color);
+  font-weight: bold;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
-@font-face {
-  font-family: 'Poppins Regular';
-  /* font-style: normal;
-  font-weight: 400; */
-  src: url('/font/Poppins-Regular.ttf');
+.author_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-/* @import url('https://fonts.font.im/css2?family=Noto+Sans+SC:wght@500&display=swap'); */
-
-* {
-  padding: 0;
-  margin: 0;
-  /* scrollbar-width: none; */
+.author_desc {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'MonaspaceKryptonVarVF';
 }
 
-:root {
-  --text-color: #474440;
-  --theme-color: #4664b0;
-  --border-radius: 8px;
+.loxi_main {
+  display: flex;
+  align-items: start;
+  width: 100%;
 }
 
-body {
-  font-family: 'Poppins Regular';
+.loxi_author {
+  position: relative;
+  background-image: url('/img/LoXi_O_6.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   min-width: 320px;
-  color: var(--text-color);
-  background-color: #ffffff;
+  width: 40%;
+  overflow: hidden;
+}
+
+.loxi_blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.loxi_padding {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 20px 0;
+}
+
+.author_logo {
+  width: 70%;
+}
+
+@media screen and (max-width: 800px) {
+  .loxi_author {
+    width: 100%;
+    height: auto;
+  }
+
+  .loxi_main {
+    flex-direction: column;
+  }
 }
 </style>
