@@ -51,7 +51,6 @@ const contactLinkConfig = ref([{
   /* gap: 8px; */
   width: 100%;
   height: 100vh;
-  overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
 }
@@ -131,6 +130,10 @@ const contactLinkConfig = ref([{
 
   .loxi_main {
     flex-direction: column;
+  }
+
+  .loxi_page {
+    height: auto;
   }
 }
 </style>
