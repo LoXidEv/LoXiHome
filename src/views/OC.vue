@@ -9,5 +9,6 @@
 <style scoped>
 .oc_img_fullwidth{
     width: 100%;
+    border-radius: var(--border-radius);
 }
 </style>

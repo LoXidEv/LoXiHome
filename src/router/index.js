@@ -14,12 +14,12 @@ const router = createRouter({
       name: 'home',
       component: Home
     },
+    // {
+    //   path: '/oc',
+    //   name: 'oc',
+    //   component: OC
+    // },
     {
-      path: '/oc',
-      name: 'oc',
-      component: OC
-    },
-        {
       path: '/sar',
       name: 'sar',
       component: SAR

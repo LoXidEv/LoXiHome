@@ -33,19 +33,33 @@ const contactLinkConfig = ref([{
     <div class="loxi_page">
       <Navbar />
       <div class="loxi_view">
-        <RouterView></RouterView>
+        <div class="loxi_width">
+          <RouterView></RouterView>
+          <CFooter />
+        </div>
       </div>
-      <CFooter />
     </div>
   </div>
 </template>
 
 <style>
-.loxi_view{
+@media screen and (min-width: 1240px) {
+  .loxi_width {
+    width: 60% !important;
+  }
+}
+
+.loxi_width{
+  width: 100%;
+}
+
+.loxi_view {
+  display: flex;
+  justify-content: center;
   padding: 0 20px;
 }
 
-.loxi_page{
+.loxi_page {
   display: flex;
   flex-direction: column;
   /* gap: 8px; */

@@ -9,7 +9,7 @@
 
 <style scoped>
 .loxi_footer {
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .footer_desc {
