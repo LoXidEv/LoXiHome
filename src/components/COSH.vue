@@ -33,7 +33,7 @@
 
 <style scoped>
 .cosh_worker_span {
-    font-family: 'HooskaiChamferedSquare Regular';
+    font-family: 'HooskaiChamferedSquare';
 }
 
 .cosh_worker_bottom {
@@ -90,7 +90,7 @@
 
 .cosh_worker_main {
     padding: 10px;
-    border: 4px var(--theme-color-2) solid;
-    border-radius: 8px;
+    border: 2px var(--theme-color-2) solid;
+    border-radius: var(--border-radius);
 }
 </style>

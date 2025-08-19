@@ -25,8 +25,9 @@ const contactLinkConfig = ref([{
         <div class="author_desc animate__animated animate__fadeInUp animate__delay-1s">Some days you bloom,<br>some days
           you grow roots.<br>Both matter.</div>
         <div class="author_contact animate__animated animate__fadeInUp animate__delay-2s">
-          <a target="_blank" v-for="item in contactLinkConfig" :href="item.link" class="contact_link">{{ item.name
-          }}</a>
+          <!-- <a target="_blank" v-for="item in contactLinkConfig" :href="item.link" class="contact_link">{{ item.name
+          }}</a> -->
+          <RouterLink class="contact_link" to="/contact">Contact me</RouterLink>
         </div>
       </div>
     </div>

@@ -5,16 +5,18 @@ export default {
             navbarLinkConfig: [
                 {
                     name: "Home",
-                    // link: "/",
                     id: "home"
                 },
                 // {
                 //     name: "Original Character",
-                //     link: "/oc"
+                //     id: "oc"
                 // },
                 {
+                    name: "Contact me",
+                    id: "contact"
+                },
+                {
                     name: "Super Animals Royale",
-                    // link: "/sar"
                     id: "sar"
                 },
             ],
@@ -26,10 +28,12 @@ export default {
 
 <template>
     <div class="loxi_navbar">
-        <RouterLink v-for="item in navbarLinkConfig" :to="{ name: item.id }" :class="'navbar_item ' + (($route.name == item.id) ? 'focus' : '')">
+        <RouterLink v-for="item in navbarLinkConfig" :to="{ name: item.id }"
+            :class="'navbar_item ' + (($route.name == item.id) ? 'focus' : '')">
             {{ item.name }}
         </RouterLink>
-        <RouterLink v-if="$route.name == 'notfound'" :to="{ name: 'notfound' }" :class="'navbar_item ' + (($route.name == 'notfound') ? 'focus' : '') + 'animate__animated animate__fadeIn'">
+        <RouterLink v-if="$route.name == 'notfound'" :to="{ name: 'notfound' }"
+            :class="'navbar_item ' + (($route.name == 'notfound') ? 'focus' : '')">
             404 Not Found
         </RouterLink>
     </div>
