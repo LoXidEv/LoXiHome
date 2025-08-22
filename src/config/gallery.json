@@ -1,0 +1,77 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "title": "日常生活",
+      "description": "记录平凡而美好的日常",
+      "cover": "/img/gallery/daily/cover.jpg",
+      "images": [
+        {
+          "id": 1,
+          "src": "/img/gallery/daily/1.jpg",
+          "title": "美好的一天",
+          "description": "阳光明媚的午后",
+          "date": "2024-01-15"
+        },
+        {
+          "id": 2,
+          "src": "/img/gallery/daily/2.jpg",
+          "title": "咖啡时光",
+          "description": "享受悠闲的咖啡时光",
+          "date": "2024-01-20"
+        },
+        {
+          "id": 3,
+          "src": "/img/gallery/daily/3.jpg",
+          "title": "夕阳西下",
+          "description": "美丽的夕阳景色",
+          "date": "2024-02-01"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "旅行记录",
+      "description": "探索世界的足迹",
+      "cover": "/img/gallery/travel/cover.jpg",
+      "images": [
+        {
+          "id": 4,
+          "src": "/img/gallery/travel/1.jpg",
+          "title": "山间小径",
+          "description": "徒步山间的美丽风景",
+          "date": "2024-03-10"
+        },
+        {
+          "id": 5,
+          "src": "/img/gallery/travel/2.jpg",
+          "title": "海边日出",
+          "description": "海边观看日出的壮观景象",
+          "date": "2024-03-15"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "美食记录",
+      "description": "品味生活中的美食",
+      "cover": "/img/gallery/food/cover.jpg",
+      "images": [
+        {
+          "id": 6,
+          "src": "/img/gallery/food/1.jpg",
+          "title": "精致料理",
+          "description": "精心制作的美味料理",
+          "date": "2024-04-01"
+        },
+        {
+          "id": 7,
+          "src": "/img/gallery/food/2.jpg",
+          "title": "甜品时光",
+          "description": "美味的下午茶甜品",
+          "date": "2024-04-05"
+        }
+      ]
+    }
+  ]
+}

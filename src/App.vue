@@ -1,18 +1,6 @@
 <script setup>
 import Navbar from '@/components/UI/Navbar.vue';
 import CFooter from '@/components/UI/Footer.vue';
-import { ref } from 'vue'
-
-const contactLinkConfig = ref([{
-  name: 'GitHub',
-  link: 'https://github.com/loxidev',
-}, {
-  name: 'Afdian',
-  link: 'https://afdian.com/a/loxidev',
-}, {
-  name: 'Bilibili',
-  link: 'https://space.bilibili.com/1093209533',
-}])
 </script>
 
 <template>
@@ -20,7 +8,7 @@ const contactLinkConfig = ref([{
     <div class="loxi_author">
       <div class="loxi_blur"></div>
       <div class="loxi_padding">
-        <img src="/img/LoXi_Logo.png" alt="LoXi Logo" class="author_logo animate__animated animate__pulse" />
+        <img src="/img/LoXi/LoXi_Logo.png" alt="LoXi Logo" class="author_logo animate__animated animate__pulse" />
         <!-- <div class="author_name">洛溪 LoXi</div> -->
         <div class="author_desc animate__animated animate__fadeInUp animate__delay-1s">Some days you bloom,<br>some days
           you grow roots.<br>Both matter.</div>
@@ -103,7 +91,7 @@ const contactLinkConfig = ref([{
 
 .loxi_author {
   position: relative;
-  background-image: url('/img/LoXi_O_6.webp');
+  background-image: url('/img/LoXi/LoXi_Bg.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

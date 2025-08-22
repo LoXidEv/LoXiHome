@@ -2,7 +2,7 @@
     <div class="cosh_worker_main">
         <div class="cosh_worker_top">
             <div class="cosh_worker_banner">
-                <img src="/img/logo_cosh_dark.svg" class="cosh_worker_logo" alt="COSH Logo">
+                <img src="/img/logo/logo_cosh_dark.svg" class="cosh_worker_logo" alt="COSH Logo">
                 <div class="cosh_worker_title">
                     COSH
                 </div>

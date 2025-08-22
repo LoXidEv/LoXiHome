@@ -37,7 +37,7 @@
 * {
   padding: 0;
   margin: 0;
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
 }
 
 :root {
@@ -46,6 +46,7 @@
   --theme-color-2: #f7f7f7;
   --theme-color-3: #f0f0f0;
   --border-radius: 8px;
+  --avatar-bg: url('https://api.dicebear.com/9.x/shapes/svg')
 }
 
 body {
@@ -94,5 +95,9 @@ body {
   &:focus {
     transform: scale(0.95);
   }
-}
 
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}

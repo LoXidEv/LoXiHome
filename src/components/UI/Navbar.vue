@@ -7,9 +7,17 @@ export default {
                     name: "Home",
                     id: "home"
                 },
+                {
+                    name: "Original Character",
+                    id: "oc"
+                },
+                {
+                    name: "Message Board",
+                    id: "messageboard"
+                },
                 // {
-                //     name: "Original Character",
-                //     id: "oc"
+                //     name: "Gallery",
+                //     id: "gallery"
                 // },
                 {
                     name: "Contact me",

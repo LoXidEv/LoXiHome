@@ -5,7 +5,7 @@ import Friends from '@/components/Friends.vue';
 
 <template>
     <div class="animate__animated animate__fadeIn">
-        <img src="/img/sar_banner.webp" alt="Banner" class="loxi_banner">
+        <img src="/img/banner/sar_banner.webp" alt="Banner" class="loxi_banner">
         <div class="loxi_title">Super Animals Roayle.</div>
         <div class="loxi_subtitle">超级动物大逃杀，一个给我开发想法的游戏。</div>
         <img class="sar_oc" src="/img/friends/animals/lx.webp" alt="LoXi" />
