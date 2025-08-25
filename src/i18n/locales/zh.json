@@ -1,0 +1,26 @@
+{
+    "meta": {
+        "title": "洛溪 LoXi - Some days you bloom, some days you grow roots. Both matter."
+    },
+    "author": {
+        "desc": "Some days you bloom, some days you grow roots. Both matter.",
+        "desc1": "Some days you bloom,",
+        "desc2": "some days you grow roots.",
+        "desc3": "Both matter.",
+        "name": "LoXi"
+    },
+    "content": {
+        "home": {
+            "title": "Hello friend.",
+            "subtitle": "Welcome to my website!",
+            "content": {
+                "p1": ""
+            }
+        }
+    },
+    "button":{
+        "navbar":{
+            "home":"Home"
+        }
+    }
+}

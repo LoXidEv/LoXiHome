@@ -38,7 +38,7 @@ import CFooter from '@/components/UI/Footer.vue';
   }
 }
 
-.loxi_width{
+.loxi_width {
   width: 100%;
 }
 
