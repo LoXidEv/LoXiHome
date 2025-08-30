@@ -11,6 +11,10 @@ export default {
                     name: "Original Character",
                     id: "oc"
                 },
+                // {
+                //     name: "Function Labs",
+                //     id: "functionlabs"
+                // },
                 {
                     name: "Message Board",
                     id: "messageboard"

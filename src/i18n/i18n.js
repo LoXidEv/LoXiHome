@@ -1,6 +1,6 @@
 import { createI18n } from 'vue-i18n'
 
-import tcLocales from './locales/zh-TW.json'
+import tcLocales from './locales/tc.json'
 import zhLocales from './locales/zh.json'
 import enLocales from './locales/en.json'
 
@@ -9,7 +9,7 @@ export const i18n = createI18n({
     locale: localStorage.getItem('lang') || 'zh',
     fallbackLocale: 'zh',
     messages: {
-        'zh-TW': tcLocales,
+        'tc': tcLocales,
         'zh': zhLocales,
         'en': enLocales,
     },

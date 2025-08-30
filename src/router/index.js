@@ -6,6 +6,7 @@ import SAR from '@/views/SAR.vue'
 import NotFound from '@/views/NotFound.vue'
 import Contact from '@/views/Contact.vue'
 import MessageBoard from '@/views/MessageBoard.vue'
+// import FunctionLabs from '@/views/FunctionLabs.vue'
 // import Gallery from '@/views/Gallery.vue'
 
 const router = createRouter({
@@ -37,6 +38,11 @@ const router = createRouter({
       name: 'messageboard',
       component: MessageBoard
     },
+    // {
+    //   path: '/functionlabs',
+    //   name: 'functionlabs',
+    //   component: FunctionLabs
+    // },
     // {
     //   path: '/gallery',
     //   name: 'gallery',

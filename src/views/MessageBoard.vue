@@ -149,30 +149,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.form_input,
-.form_textarea {
-  width: 100%;
-  padding: 8px 10px;
-  margin: 8px 0;
-  border: 1px solid #ddd;
-  border-radius: var(--border-radius);
-  font-family: inherit;
-  font-size: 14px;
-  transition: border-color 0.3s;
-  box-sizing: border-box;
-}
-
-.form_input:focus,
-.form_textarea:focus {
-  outline: none;
-  border-color: var(--theme-color);
-}
-
-.form_textarea {
-  resize: vertical;
-  min-height: 80px;
-}
-
 .char_count {
   text-align: right;
   font-size: 11px;
