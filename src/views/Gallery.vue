@@ -27,15 +27,15 @@ const backToAlbums = () => {
 </script>
 
 <template>
-    <div class="gallery-container">
-        <div v-if="!selectedAlbum" key="albums" class="albums-view animate__animated animate__fadeIn">
+    <div class="gallery_container">
+        <div v-if="!selectedAlbum" key="albums" class="albums_view animate__animated animate__fadeIn">
             <div class="loxi_title">Gallery.</div>
             <div class="loxi_subtitle">记录生活的美好！</div>
-            <div class="albums-grid">
-                <div v-for="album in galleryData.albums" :key="album.id" class="album-card" @click="selectAlbum(album)">
-                    <div class="album-cover">
-                        <img :src="album.cover" :alt="album.title" @error="$event.target.src = '/img/placeholder.jpg'">
-                        <div class="album-overlay">
+            <div class="albums_grid">
+                <div v-for="album in galleryData.albums" :key="album.id" class="album_card" @click="selectAlbum(album)">
+                    <div class="album_cover">
+                        <img :src="album.cover" :alt="album.title" @error="$event.target.src = '/img/construction.webp'">
+                        <div class="album_overlay">
                             <div class="loxi_title">{{ album.title }}</div>
                             <div class="loxi_subtitle">{{ album.description }}</div>
                         </div>
@@ -44,13 +44,13 @@ const backToAlbums = () => {
             </div>
         </div>
 
-        <div v-else key="waterfall" class="waterfall-view animate__animated animate__fadeIn">
+        <div v-else key="waterfall" class="waterfall_view animate__animated animate__fadeIn">
             <div class="loxi_title">{{ selectedAlbum.title }}</div>
             <div class="loxi_subtitle">{{ selectedAlbum.description }}</div>
-            <div class="waterfall-container">
-                <div v-for="image in allImages" :key="image.id" class="waterfall-item">
-                    <img :src="image.src" :alt="image.title" @error="$event.target.src = '/img/placeholder.jpg'">
-                    <div class="image-info">
+            <div class="waterfall_container">
+                <div v-for="image in allImages" :key="image.id" class="waterfall_item">
+                    <img :src="image.src" :alt="image.title" @error="$event.target.src = '/img/construction.webp'">
+                    <div class="image_info">
                         <div class="loxi_title">{{ image.title }}</div>
                         <div class="loxi_subtitle">{{ image.description }}</div>
                     </div>
@@ -65,14 +65,14 @@ const backToAlbums = () => {
 </template>
 
 <style scoped>
-.albums-grid {
+.albums_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-bottom: 40px;
 }
 
-.album-card {
+.album_card {
     position: relative;
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -81,24 +81,24 @@ const backToAlbums = () => {
     border: 1px solid var(--border-color);
 }
 
-.album-cover {
+.album_cover {
     position: relative;
     height: 250px;
     overflow: hidden;
 }
 
-.album-cover img {
+.album_cover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.album-card:hover .album-cover img {
+.album_card:hover .album_cover img {
     transform: scale(1.05);
 }
 
-.album-overlay {
+.album_overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -109,34 +109,34 @@ const backToAlbums = () => {
     transition: transform 0.3s ease;
 }
 
-.album-card:hover .album-overlay {
+.album_card:hover .album_overlay {
     transform: translateY(0);
 }
 
-.waterfall-view {
+.waterfall_view {
     width: 100%;
 }
 
-.waterfall-container {
+.waterfall_container {
     column-count: 4;
     column-gap: 0;
     padding: 0;
 }
 
-.waterfall-item {
+.waterfall_item {
     break-inside: avoid;
     margin-bottom: 0;
     position: relative;
     overflow: hidden;
 }
 
-.waterfall-item img {
+.waterfall_item img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.waterfall-item .image-info {
+.waterfall_item .image_info {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -147,22 +147,22 @@ const backToAlbums = () => {
     transition: transform 0.3s ease;
 }
 
-.waterfall-item:hover .image-info {
+.waterfall_item:hover .image_info {
     transform: translateY(0);
 }
 
 @media (max-width: 1200px) {
-    .waterfall-container {
+    .waterfall_container {
         column-count: 3;
     }
 }
 
 @media (max-width: 768px) {
-    .albums-grid {
+    .albums_grid {
         grid-template-columns: 1fr;
     }
 
-    .waterfall-container {
+    .waterfall_container {
         column-count: 2;
         column-gap: 0;
         padding: 0;
@@ -170,7 +170,7 @@ const backToAlbums = () => {
 }
 
 @media (max-width: 480px) {
-    .waterfall-container {
+    .waterfall_container {
         column-count: 1;
         padding: 0;
     }

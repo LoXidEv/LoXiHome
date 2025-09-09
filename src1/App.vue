@@ -1,5 +1,5 @@
 <script setup>
-import Music from '@/components/Music.vue'
+import Music from '@/components/Tool.vue'
 </script>
 
 <template>

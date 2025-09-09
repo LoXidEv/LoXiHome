@@ -43,8 +43,11 @@
 :root {
   --text-color: #474440;
   --theme-color: #4664b0;
+  --theme-color-oc: #4664b067;
+  --theme-color-1: #44ffb1;
   --theme-color-2: #f7f7f7;
   --theme-color-3: #f0f0f0;
+  --theme-color-4: #69fff7;
   --border-radius: 8px;
   --avatar-bg: url('https://api.dicebear.com/9.x/shapes/svg')
 }

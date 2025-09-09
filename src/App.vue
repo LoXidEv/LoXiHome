@@ -1,6 +1,7 @@
 <script setup>
 import Navbar from '@/components/UI/Navbar.vue';
 import CFooter from '@/components/UI/Footer.vue';
+import Tool from '@/components/Tool.vue';
 </script>
 
 <template>
@@ -27,6 +28,7 @@ import CFooter from '@/components/UI/Footer.vue';
           <CFooter />
         </div>
       </div>
+      <Tool />
     </div>
   </div>
 </template>
@@ -91,10 +93,6 @@ import CFooter from '@/components/UI/Footer.vue';
 
 .loxi_author {
   position: relative;
-  background-image: url('/img/LoXi/LoXi_Bg.webp');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,11 +104,16 @@ import CFooter from '@/components/UI/Footer.vue';
 }
 
 .loxi_blur {
+  background-image: url('/img/LoXi/LoXi_Bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  filter: blur(8px);
+  /* backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); */
   z-index: 1;
 }
 
