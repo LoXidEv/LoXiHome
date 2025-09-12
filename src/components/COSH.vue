@@ -1,8 +1,32 @@
+<script>
+export default {
+    data() {
+        return {
+            isDark: false
+        }
+    },
+    mounted() {
+        this.isDark = localStorage.getItem("theme") == "dark";
+        window.addEventListener('themeChanged', this.handleThemeChange);
+    },
+    beforeUnmount() {
+        window.removeEventListener('themeChanged', this.handleThemeChange);
+    },
+    methods: {
+        handleThemeChange(event) {
+            this.isDark = event.detail.isDark;
+        }
+    }
+    
+}
+</script>
+
 <template>
     <div class="cosh_worker_main">
         <div class="cosh_worker_top">
             <div class="cosh_worker_banner">
-                <img src="/img/logo/logo_cosh_dark.svg" class="cosh_worker_logo" alt="COSH Logo">
+                <img src="/img/logo/logo_cosh_light.svg" class="cosh_worker_logo" alt="COSH Logo" v-if="isDark">
+                <img src="/img/logo/logo_cosh_dark.svg" class="cosh_worker_logo" alt="COSH Logo" v-else>
                 <div class="cosh_worker_title">
                     COSH
                 </div>
@@ -92,5 +116,6 @@
     padding: 10px;
     border: 2px var(--theme-color-2) solid;
     border-radius: var(--border-radius);
+    background-color: var(--background-color);
 }
 </style>

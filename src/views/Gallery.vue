@@ -77,8 +77,8 @@ const backToAlbums = () => {
     border-radius: var(--border-radius);
     overflow: hidden;
     cursor: pointer;
-    background: #fff;
-    border: 1px solid var(--border-color);
+    background: var(--background-color);
+    border: 1px solid var(--theme-color-3);
 }
 
 .album_cover {

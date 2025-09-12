@@ -181,6 +181,8 @@ onMounted(() => {
   margin-bottom: 10px;
   position: relative;
   overflow: hidden;
+  background-color: var(--theme-color-2);
+  border: 1px solid var(--theme-color-3);
 }
 
 .message_item::before {
@@ -212,7 +214,7 @@ onMounted(() => {
   height: 50px;
   object-fit: cover;
   margin-right: 12px;
-  border: 2px solid #fff;
+  border: 2px solid var(--background-color);
 }
 
 .message_info {
@@ -242,5 +244,7 @@ onMounted(() => {
   z-index: 1;
   padding: 8px;
   border-radius: var(--border-radius);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 </style>

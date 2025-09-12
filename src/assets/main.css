@@ -41,13 +41,36 @@
 }
 
 :root {
-  --text-color: #474440;
-  --theme-color: #4664b0;
-  --theme-color-oc: #4664b067;
-  --theme-color-1: #44ffb1;
-  --theme-color-2: #f7f7f7;
-  --theme-color-3: #f0f0f0;
-  --theme-color-4: #69fff7;
+  &.loxi_dark {
+    --text-color: #ffffff;
+    --theme-color: #4664b0;
+    --theme-color-oc: #4664b067;
+    --theme-color-1: #44ffb1;
+    --theme-color-2: #474747;
+    --theme-color-3: #4d4d4d;
+    --theme-color-4: #69fff7;
+    --background-color: #222222;
+    --friends-bg-image: url('/img/friends/th.webp');
+    /* --tool-bg-color: #474440ee; */
+    /* --tool-bg-image: url('/img/bg4.svg'); */
+    --author-bg-image: url('/img/LoXi/LoXi_Bg_dark.webp');
+  }
+
+  &.loxi_light {
+    --text-color: #474440;
+    --theme-color: #4664b0;
+    --theme-color-oc: #4664b067;
+    --theme-color-1: #44ffb1;
+    --theme-color-2: #f7f7f7;
+    --theme-color-3: #f0f0f0;
+    --theme-color-4: #69fff7;
+    --background-color: #ffffff;
+    --friends-bg-image: url('/img/friends/th.webp');
+    /* --tool-bg-color: #ffffffee; */
+    /* --tool-bg-image: url('/img/bg4.svg'); */
+    --author-bg-image: url('/img/LoXi/LoXi_Bg.webp');
+  }
+
   --border-radius: 8px;
   --avatar-bg: url('https://api.dicebear.com/9.x/shapes/svg')
 }
@@ -56,7 +79,7 @@ body {
   font-family: 'Poppins Regular';
   min-width: 320px;
   color: var(--text-color);
-  background-color: #ffffff;
+  background-color: var(--background-color);
 }
 
 .loxi_title {
@@ -84,7 +107,7 @@ body {
   font-size: 14px;
   /* font-weight: bold; */
   font-family: 'Poppins SemiBold';
-  background-color: #ffffff;
+  background-color: var(--background-color);
   padding: 6px 12px;
   border-radius: var(--border-radius);
   border: 2px solid var(--theme-color);
@@ -110,12 +133,14 @@ body {
   width: 100%;
   padding: 8px 10px;
   margin: 8px 0;
-  border: 1px solid #ddd;
+  border: 1px solid var(--theme-color-3);
   border-radius: var(--border-radius);
   font-family: inherit;
   font-size: 14px;
   transition: border-color 0.3s;
   box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .form_input:focus,

@@ -83,7 +83,7 @@ onUnmounted(() => {
     position: relative;
     z-index: 1;
     min-width: 1400px;
-    background-image: url('/img/friends/th.webp');
+    background-image: var(--friends-bg-image);
     /* background-image: url('https://cosh.work/new/img/star.webp'); */
     height: 380px;
     border-radius: 8px;

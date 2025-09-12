@@ -1,10 +1,15 @@
 <script setup>
 import Navbar from '@/components/UI/Navbar.vue';
 import CFooter from '@/components/UI/Footer.vue';
-import Tool from '@/components/Tool.vue';
+// import Tool from '@/components/Tool.vue';
+import Start from '@/components/Start.vue';
+import { ref } from 'vue';
+
+const isStart = ref(true);
 </script>
 
 <template>
+  <!-- <Start v-if="isStart" /> -->
   <div class="loxi_main animate__animated animate__fadeIn">
     <div class="loxi_author">
       <div class="loxi_blur"></div>
@@ -28,7 +33,7 @@ import Tool from '@/components/Tool.vue';
           <CFooter />
         </div>
       </div>
-      <Tool />
+      <!-- <Tool /> -->
     </div>
   </div>
 </template>
@@ -58,6 +63,7 @@ import Tool from '@/components/Tool.vue';
   height: 100vh;
   overflow-y: scroll;
   scrollbar-width: none;
+  background-color: var(--background-color);
 }
 
 .contact_link {
@@ -104,7 +110,7 @@ import Tool from '@/components/Tool.vue';
 }
 
 .loxi_blur {
-  background-image: url('/img/LoXi/LoXi_Bg.webp');
+  background-image: var(--author-bg-image);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,6 +118,7 @@ import Tool from '@/components/Tool.vue';
   width: 100%;
   height: 100%;
   filter: blur(8px);
+  background-color: transparent;
   /* backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); */
   z-index: 1;

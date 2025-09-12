@@ -8,6 +8,7 @@ export default {
     <div class="new_cosh animate__animated animate__fadeInDown">
         <a target="_blank" href="https://cosh.work">
             <img src="/img/logo_cosh_dark.svg" class="new_cosh_logo">
+            <img src="/img/logo_cosh_light.svg" class="new_cosh_logo">
             <!-- COSH -->
         </a>
     </div>

@@ -98,9 +98,9 @@ export default {
     z-index: 1000;
     padding: 6px 20px;
     font-size: 14px;
-    background-color: #ffffffee;
+    background-color: var(--tool-bg-color);
     backdrop-filter: blur(8px);
-    background-image: url('/img/bg4.svg');
+    background-image: var(--tool-bg-image);
     background-size: cover;
     background-position: center;
     border-top: 2px solid var(--theme-color-3);

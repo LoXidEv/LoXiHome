@@ -62,6 +62,7 @@ const contactLinkConfig = ref([{
     height: 40px;
     overflow: hidden;
     transition: all 0.3s;
+    background-color: var(--background-color);
 
     &:hover {
         color: var(--theme-color);

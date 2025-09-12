@@ -21,7 +21,7 @@ export default {
 <style>
 .sponsor_main {
     position: relative;
-    background-color: #f4f0fc;
+    background-color: #956ce621;
     color: #946ce6;
     padding: 8px;
     border-radius: var(--border-radius);
