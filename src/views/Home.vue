@@ -1,24 +1,24 @@
 <script setup>
 // import CodeTime from '@/components/CodeTime.vue';
 import COSH from '@/components/COSH.vue';
-import { ref } from 'vue';
-
-const imageLoaded = ref(false);
 </script>
 
 <template>
     <div class="animate__animated animate__fadeIn">
+        <!-- <div class="loxi_b_h">
+            <img src="/img/friends/th.webp" alt="Banner" class="loxi_banner">
+            <div class="loxi_h">
+                <div class="loxi_title">Hello friend.</div>
+                <div class="loxi_subtitle">Welcome to my website!</div>
+            </div>
+        </div> -->
         <img src="/img/friends/th.webp" alt="Banner" class="loxi_banner">
         <div class="loxi_title">Hello friend.</div>
         <div class="loxi_subtitle">Welcome to my website!</div>
         <div>
-            <img 
-                @error="$event.target.style.display = 'none'"
-                width="100%" 
-                alt="Moe Counter" 
+            <img @error="$event.target.style.display = 'none'" width="100%" alt="Moe Counter"
                 class="animate__animated animate__fadeIn"
-                src="https://count.getloli.com/@LoXidEv?name=LoXidEv&theme=booru-ve&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto"
-            >
+                src="https://count.getloli.com/@LoXidEv?name=LoXidEv&theme=booru-ve&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto">
             你好！我是洛溪，英文名 LoXi，开发时常用 LoXidEv，是一名来自中国的学生，计算机开发爱好者。
             <br>
             自 2020 年开启自学之旅以来，我在代码的世界里不断探索成长，如今已积累了不少实践经验。

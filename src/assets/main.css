@@ -82,6 +82,19 @@ body {
   background-color: var(--background-color);
 }
 
+.loxi_b_h{
+  position: relative;
+}
+
+.loxi_h{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 10px 0 10px;
+  background-color: var(--background-color);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
 .loxi_title {
   font-size: 30px;
   font-weight: bold;

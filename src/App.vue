@@ -2,10 +2,10 @@
 import Navbar from '@/components/UI/Navbar.vue';
 import CFooter from '@/components/UI/Footer.vue';
 // import Tool from '@/components/Tool.vue';
-import Start from '@/components/Start.vue';
-import { ref } from 'vue';
+// import Start from '@/components/Start.vue';
+// import { ref } from 'vue';
 
-const isStart = ref(true);
+// const isStart = ref(true);
 </script>
 
 <template>
@@ -28,6 +28,7 @@ const isStart = ref(true);
     <div class="loxi_page">
       <Navbar />
       <div class="loxi_view">
+        <img src="/img/LoXi/LoXi_Fly.webp" alt="LoXi Fly Bg" class="view_bg">
         <div class="loxi_width">
           <RouterView></RouterView>
           <CFooter />
@@ -39,6 +40,16 @@ const isStart = ref(true);
 </template>
 
 <style>
+.view_bg {
+  position: fixed;
+  bottom: 0;
+  right: -100px;
+  width: 800px;
+  max-width: 100%;
+  z-index: 0;
+  opacity: 0.2;
+}
+
 @media screen and (min-width: 1240px) {
   .loxi_width {
     width: 60% !important;
