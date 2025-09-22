@@ -125,6 +125,7 @@ export default {
 }
 
 .loxi_navbar_container {
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: space-between;
