@@ -29,7 +29,7 @@ export default {
 
 <template>
     <div class="animate__animated animate__fadeIn">
-        <div class="loxi_title">我的朋友</div>
+        <div class="loxi_title">友情链接</div>
         <div class="loxi_subtitle">放一些朋友的网站</div>
         <div class="loxi_friends">
             <a v-for="friend in friends" :href="friend.url" target="_blank" class="loxi_friend">
