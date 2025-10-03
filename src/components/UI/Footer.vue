@@ -1,6 +1,6 @@
 <template>
     <div class="loxi_footer">
-        <div class="footer_desc">Some days you bloom, some days you grow roots. Both matter.</div>
+        <div class="footer_desc">橘熟霜轻浮洛水，溪光映果满庭芳</div>
         <div class="footer_copyright">
             Copyright © LoXi 2024-{{ new Date().getFullYear() }}. All rights reserved.
         </div>

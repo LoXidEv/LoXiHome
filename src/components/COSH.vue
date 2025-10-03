@@ -31,7 +31,7 @@ export default {
                     COSH
                 </div>
                 <div class="cosh_worker_subtitle">
-                    从一行注释到一个世界
+                    从一行代码到一个世界
                 </div>
                 <div>Link: <a class="cosh_link" target="_blank" href="https://cosh.work">cosh.work</a></div>
             </div>

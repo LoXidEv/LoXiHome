@@ -6,6 +6,7 @@ import SAR from '@/views/SAR.vue'
 import NotFound from '@/views/NotFound.vue'
 import Contact from '@/views/Contact.vue'
 import MessageBoard from '@/views/MessageBoard.vue'
+import Friends from '@/views/Friends.vue'
 // import FunctionLabs from '@/views/FunctionLabs.vue'
 // import Gallery from '@/views/Gallery.vue'
 
@@ -37,6 +38,11 @@ const router = createRouter({
       path: '/messageboard',
       name: 'messageboard',
       component: MessageBoard
+    },
+    {
+      path: '/friends',
+      name: 'friends',
+      component: Friends
     },
     // {
     //   path: '/functionlabs',

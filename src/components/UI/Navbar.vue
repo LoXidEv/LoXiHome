@@ -35,6 +35,10 @@ export default {
                     name: "Super Animals Royale",
                     id: "sar"
                 },
+                {
+                    name: "Friends",
+                    id: "friends"
+                },
             ],
         }
     },

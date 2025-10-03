@@ -45,14 +45,9 @@
     --text-color: #ffffff;
     --theme-color: #4664b0;
     --theme-color-oc: #4664b067;
-    --theme-color-1: #44ffb1;
     --theme-color-2: #474747;
     --theme-color-3: #4d4d4d;
-    --theme-color-4: #69fff7;
     --background-color: #222222;
-    --friends-bg-image: url('/img/friends/th.webp');
-    /* --tool-bg-color: #474440ee; */
-    /* --tool-bg-image: url('/img/bg4.svg'); */
     --author-bg-image: url('/img/LoXi/LoXi_Bg_dark.webp');
   }
 
@@ -60,17 +55,13 @@
     --text-color: #474440;
     --theme-color: #4664b0;
     --theme-color-oc: #4664b067;
-    --theme-color-1: #44ffb1;
     --theme-color-2: #f7f7f7;
     --theme-color-3: #f0f0f0;
-    --theme-color-4: #69fff7;
     --background-color: #ffffff;
-    --friends-bg-image: url('/img/friends/th.webp');
-    /* --tool-bg-color: #ffffffee; */
-    /* --tool-bg-image: url('/img/bg4.svg'); */
     --author-bg-image: url('/img/LoXi/LoXi_Bg.webp');
   }
 
+  --friends-bg-image: url('/img/friends/th.webp');
   --border-radius: 8px;
   --avatar-bg: url('https://api.dicebear.com/9.x/shapes/svg')
 }
@@ -82,11 +73,11 @@ body {
   background-color: var(--background-color);
 }
 
-.loxi_b_h{
+.loxi_b_h {
   position: relative;
 }
 
-.loxi_h{
+.loxi_h {
   position: absolute;
   bottom: 0;
   left: 0;

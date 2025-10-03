@@ -9,7 +9,7 @@ import ButtonBlur from '@/components/ButtonBlur.vue';
         <img src="/img/LoXi_Logo.png" class="notfound_text_logo animate__animated animate__pulse" alt="LoXi Logo">
         <!-- <div class="notfound_text_title animate__animated animate__flipInX animate__delay-1s">洛溪 <span style="color: var(--theme-color);">LoXi</span></div> -->
         <div class="notfound_text_subtitle animate__animated animate__fadeInUp animate__delay-1s">
-            Some days you bloom, some days you grow roots. Both matter.
+            橘熟霜轻浮洛水，溪光映果满庭芳
         </div>
         <ButtonBlur path="/" class="animate__animated animate__fadeInUp animate__delay-1s" text="About Me" />
         <!-- </div> -->
