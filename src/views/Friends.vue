@@ -5,7 +5,7 @@ export default {
             friends: [
                 {
                     name: "LeonardoFox",
-                    desc: "一个有趣的人",
+                    desc: "一只想要走遍全世界的小狐狸",
                     url: "https://leonardofox346.github.io",
                     avatar: "https://q.qlogo.cn/headimg_dl?dst_uin=2460329653&spec=640&img_type=jpg"
                 }
