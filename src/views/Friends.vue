@@ -8,6 +8,18 @@ export default {
                     desc: "一只想要走遍全世界的小狐狸",
                     url: "https://leonardofox346.github.io",
                     avatar: "https://q.qlogo.cn/headimg_dl?dst_uin=2460329653&spec=640&img_type=jpg"
+                },
+                {
+                    name: "绵鳞",
+                    desc: "戚雨藏云碎诡风，轻羽绵鳞猫猫龙",
+                    url: "https://www.lscd.cc",
+                    avatar: "https://avatars.githubusercontent.com/u/28075457?v=4"
+                },
+                {
+                    name: "StarTears",
+                    desc: "银汉碎裂的刹那，星泪坠成时光里未干的墨痕",
+                    url: "https://xl.loxi.work",
+                    avatar: "https://xl.loxi.work/image/star_avatar.webp"
                 }
             ]
         }
@@ -32,17 +44,17 @@ export default {
 </template>
 
 <style scoped>
-.loxi_friend_name{
+.loxi_friend_name {
     font-size: 20px;
     color: var(--theme-color);
     font-weight: bold;
 }
 
-.loxi_friend_desc{
+.loxi_friend_desc {
     font-size: 14px;
 }
 
-.loxi_friend_img{
+.loxi_friend_img {
     width: 70px;
     border-radius: var(--border-radius);
 }
