@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import website from '@/config/website.json'
-import HomeView from '@/views/NotFound.vue'
+import HomeView from '@/views/HomeView.vue'
 import BiologicalView from '@/views/BiologicalView.vue'
 import FriendsView from '@/views/FriendsView.vue'
 import DrawView from '@/views/DrawView.vue'

@@ -43,7 +43,7 @@ import CFooter from '@/components/UI/Footer.vue';
 .view_bg {
   position: fixed;
   bottom: 0;
-  right: -220px;
+  right: -140px;
   width: 800px;
   max-width: 100%;
   z-index: 0;

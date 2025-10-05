@@ -40,7 +40,7 @@ export default {
 </script>
 
 <template>
-    <img src="/img/verlan.webp" alt="Verlan" class="new_draw_verlan-bg animate__animated animate__slideInLeft"></img>
+    <!-- <img src="/img/verlan.webp" alt="Verlan" class="new_draw_verlan-bg animate__animated animate__slideInLeft"></img> -->
     <div class="animate__animated animate__fadeIn"
         style="display: flex;justify-content: center;align-items: center;flex-direction: column;gap: 8px">
         <div class="new_title animate__animated animate__fadeInDown">

@@ -8,12 +8,12 @@ import Navbar from '@/components/Navbar.vue';
 
 <template>
   <div class="animate__animated animate__fadeIn">
-    <img src="/img/LoXi_O_6.webp" alt="LoXi" class="new_profile_bg">
+    <!-- <img src="/img/LoXi_O_6.webp" alt="LoXi" class="new_profile_bg"> -->
     <COSH />
     <Profile />
     <CodeTime />
     <Navbar />
-    <Contact />
+    <!-- <Contact /> -->
   </div>
 </template>
 
