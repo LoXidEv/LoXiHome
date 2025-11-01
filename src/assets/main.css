@@ -48,6 +48,7 @@
     --theme-color-2: #474747;
     --theme-color-3: #4d4d4d;
     --background-color: #222222;
+    --background-color-oc: #3f3f3f88;
     --author-bg-image: url('/img/LoXi/LoXi_Bg_dark.webp');
   }
 
@@ -58,6 +59,7 @@
     --theme-color-2: #f7f7f7;
     --theme-color-3: #f0f0f0;
     --background-color: #ffffff;
+    --background-color-oc: #ffffff88;
     --author-bg-image: url('/img/LoXi/LoXi_Bg.webp');
   }
 

@@ -7,7 +7,7 @@ import NotFound from '@/views/NotFound.vue'
 import Contact from '@/views/Contact.vue'
 import MessageBoard from '@/views/MessageBoard.vue'
 import Friends from '@/views/Friends.vue'
-// import FunctionLabs from '@/views/FunctionLabs.vue'
+import Article from '@/views/Article.vue'
 // import Gallery from '@/views/Gallery.vue'
 
 const router = createRouter({
@@ -44,11 +44,11 @@ const router = createRouter({
       name: 'friends',
       component: Friends
     },
-    // {
-    //   path: '/functionlabs',
-    //   name: 'functionlabs',
-    //   component: FunctionLabs
-    // },
+    {
+      path: '/article',
+      name: 'article',
+      component: Article
+    },
     // {
     //   path: '/gallery',
     //   name: 'gallery',

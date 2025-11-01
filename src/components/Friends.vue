@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+// import { ref, onMounted, onUnmounted } from 'vue';
 const friends = [
     { class: 'friends_item logo', src: '/img/friends/sar_logo.webp', alt: 'SAR Logo' },
     { class: 'friends_item loxi', src: '/img/friends/animals/lx.webp', alt: 'LoXi' },
@@ -38,27 +38,27 @@ const friends = [
     { class: 'friends_item bh', src: '/img/friends/animals/bh.webp', alt: 'bh' },
     { class: 'friends_item verlan', src: '/img/friends/animals/verlan.webp', alt: 'verlan' },
 ];
-const overflowRef = ref(null);
-let scrollTimer = null;
+// const overflowRef = ref(null);
+// let scrollTimer = null;
 
-onMounted(() => {
-    scrollTimer = setInterval(() => {
-        if (overflowRef.value) {
-            overflowRef.value.scrollLeft += 0.5; // 调整速度
-            // 到达右边后回到左边
-            if (overflowRef.value.scrollLeft >= overflowRef.value.scrollWidth - overflowRef.value.clientWidth) {
-                overflowRef.value.scrollLeft = 0;
-            }
-        }
-    }, 16); // 约60fps
-});
-onUnmounted(() => {
-    if (scrollTimer) clearInterval(scrollTimer);
-});
+// onMounted(() => {
+//     scrollTimer = setInterval(() => {
+//         if (overflowRef.value) {
+//             overflowRef.value.scrollLeft += 0.5; // 调整速度
+//             // 到达右边后回到左边
+//             if (overflowRef.value.scrollLeft >= overflowRef.value.scrollWidth - overflowRef.value.clientWidth) {
+//                 overflowRef.value.scrollLeft = 0;
+//             }
+//         }
+//     }, 16); // 约60fps
+// });
+// onUnmounted(() => {
+//     if (scrollTimer) clearInterval(scrollTimer);
+// });
 </script>
 
 <template>
-    <div class="overflow" ref="overflowRef">
+    <div class="overflow">
         <div class="friends">
             <div class="bgblur">
                 <img v-for="(friend, index) in friends" :key="index" :class="friend.class" :src="friend.src"
