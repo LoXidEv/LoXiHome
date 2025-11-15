@@ -4,6 +4,10 @@
         <div class="footer_copyright">
             Copyright © LoXi 2024-{{ new Date().getFullYear() }}. All rights reserved.
         </div>
+        <br>
+        <img width="100%" alt="Moe Counter"
+            class="animate__animated animate__fadeIn"
+            src="https://count.getloli.com/@LoXidEv?name=LoXidEv&theme=booru-ve&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto">
     </div>
 </template>
 
