@@ -10,7 +10,7 @@ import CFooter from '@/components/UI/Footer.vue';
 
 <template>
   <!-- <Start v-if="isStart" /> -->
-  <div class="loxi_main animate__animated animate__fadeIn">
+  <div v-if="$route.name !== 'card'" class="loxi_main animate__animated animate__fadeIn">
     <div class="loxi_author">
       <div class="loxi_blur"></div>
       <div class="loxi_padding">
@@ -36,6 +36,9 @@ import CFooter from '@/components/UI/Footer.vue';
       </div>
       <!-- <Tool /> -->
     </div>
+  </div>
+  <div v-else class="animate__animated animate__fadeIn">
+    <RouterView></RouterView>
   </div>
 </template>
 

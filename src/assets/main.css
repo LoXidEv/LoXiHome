@@ -64,7 +64,7 @@
   }
 
   --friends-bg-image: url('/img/friends/th.webp');
-  --border-radius: 8px;
+  --border-radius: 10px;
   --avatar-bg: url('https://api.dicebear.com/9.x/shapes/svg')
 }
 
@@ -107,6 +107,7 @@ body {
 }
 
 .loxi_button {
+  text-align: center;
   display: inline-block;
   text-decoration: none;
   color: var(--theme-color);

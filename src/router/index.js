@@ -8,6 +8,8 @@ import Contact from '@/views/Contact.vue'
 import MessageBoard from '@/views/MessageBoard.vue'
 import Friends from '@/views/Friends.vue'
 import Article from '@/views/Article.vue'
+import Card from '@/views/Card.vue'
+
 // import Gallery from '@/views/Gallery.vue'
 
 const router = createRouter({
@@ -49,6 +51,11 @@ const router = createRouter({
       name: 'article',
       component: Article
     },
+    {
+      path: '/card',
+      name: 'card',
+      component: Card
+    }
     // {
     //   path: '/gallery',
     //   name: 'gallery',
