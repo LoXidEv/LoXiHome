@@ -16,12 +16,14 @@ import COSH from '@/components/COSH.vue';
         <div class="loxi_title">Hello friend.</div>
         <div class="loxi_subtitle">Welcome to my website!</div>
         <div>
-            <a href="https://discord.com/users/1007503082600546314"><img src="https://lanyard.cnrad.dev/api/1007503082600546314?theme=light&borderRadius=10px&showDisplayName=true&hideTimestamp=true&hideActivity=true&hideSpotify=true" /></a>
+            <a href="https://discord.com/users/1007503082600546314"><img
+                    src="https://lanyard.cnrad.dev/api/1007503082600546314?theme=light&borderRadius=10px&showDisplayName=true&hideTimestamp=true&hideActivity=true&hideSpotify=true" /></a>
             <br>
             你好！我是洛溪，英文名 LoXi，开发时常用 LoXidEv，是一名来自中国的学生，计算机开发爱好者。
             <br>
             自 2020 年开启自学之旅以来，我在代码的世界里不断探索成长，如今已积累了不少实践经验。
             <br>
+            <img src="/img/LoXi/LoXi_Banner.webp" alt="Banner" class="loxi_mini">
             <br>
             经过不断地改版修改，我做出了自己的个人网站，把经验融汇其中。
             <br>
@@ -49,5 +51,9 @@ import COSH from '@/components/COSH.vue';
     &:hover {
         opacity: 0.8;
     }
+}
+
+.loxi_mini {
+    width: 100%;
 }
 </style>

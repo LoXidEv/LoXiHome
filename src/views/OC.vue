@@ -56,7 +56,7 @@ export default {
                     <br>
                     <span>MBIT:</span> INFP
                 </div>
-                <img src="/img/LoXi/LoXi_O_1.webp" alt="LoXi" class="oc_body">
+                <img src="/img/LoXi/LoXi_Bg_2.webp" alt="LoXi" class="oc_body">
             </div>
             <div class="oc_title">
                 介绍
