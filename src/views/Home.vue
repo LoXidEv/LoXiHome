@@ -17,7 +17,7 @@ import COSH from '@/components/COSH.vue';
         <div class="loxi_subtitle">Welcome to my website!</div>
         <div>
             <a href="https://discord.com/users/1007503082600546314"><img
-                    src="https://lanyard.cnrad.dev/api/1007503082600546314?theme=light&borderRadius=10px&showDisplayName=true&hideTimestamp=true&hideActivity=true&hideSpotify=true" /></a>
+                    src="https://lanyard.cnrad.dev/api/1007503082600546314?theme=light&borderRadius=10px&showDisplayName=true&hideTimestamp=true&hideActivity=true&hideSpotify=true" width="100%"/></a>
             <br>
             你好！我是洛溪，英文名 LoXi，开发时常用 LoXidEv，是一名来自中国的学生，计算机开发爱好者。
             <br>
