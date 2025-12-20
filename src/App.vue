@@ -28,7 +28,7 @@ import CFooter from '@/components/UI/Footer.vue';
     <div class="loxi_page">
       <Navbar />
       <div class="loxi_view">
-        <img src="/img/LoXi/LoXi_Bg_2.webp" alt="LoXi Book Bg" class="view_bg">
+        <img src="/img/LoXi/LoXi_Street.webp" alt="LoXi Book Bg" class="view_bg">
         <div class="loxi_width">
           <RouterView></RouterView>
           <CFooter />
@@ -46,11 +46,12 @@ import CFooter from '@/components/UI/Footer.vue';
 .view_bg {
   position: fixed;
   bottom: 0;
-  right: -80px;
-  width: 400px;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 0;
-  opacity: 0.4;
+  opacity: 0.6;
+  filter: blur(4px);
 }
 
 @media screen and (min-width: 1240px) {
