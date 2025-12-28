@@ -46,16 +46,16 @@ const router = createRouter({
       name: 'friends',
       component: Friends
     },
-    {
-      path: '/article',
-      name: 'article',
-      component: Article
-    },
-    {
-      path: '/card',
-      name: 'card',
-      component: Card
-    }
+    // {
+    //   path: '/article',
+    //   name: 'article',
+    //   component: Article
+    // },
+    // {
+    //   path: '/card',
+    //   name: 'card',
+    //   component: Card
+    // }
     // {
     //   path: '/gallery',
     //   name: 'gallery',

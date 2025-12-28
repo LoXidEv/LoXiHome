@@ -39,10 +39,10 @@ export default {
                     name: "Friends",
                     id: "friends"
                 },
-                {
-                    name: "Article",
-                    id: "article"
-                },
+                // {
+                //     name: "Article",
+                //     id: "article"
+                // },
             ],
         }
     },
