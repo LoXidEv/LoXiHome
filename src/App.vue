@@ -1,6 +1,7 @@
 <script setup>
 import Navbar from '@/components/UI/Navbar.vue';
 import CFooter from '@/components/UI/Footer.vue';
+import PageCard from '@/components/Card.vue';
 // import Tool from '@/components/Tool.vue';
 // import Start from '@/components/Start.vue';
 // import { ref } from 'vue';
@@ -9,18 +10,14 @@ import CFooter from '@/components/UI/Footer.vue';
 </script>
 
 <template>
-  <!-- <Start v-if="isStart" /> -->
-  <div v-if="$route.name !== 'card'" class="loxi_main animate__animated animate__fadeIn">
+  <!-- <div v-if="$route.name !== 'card'" class="loxi_main animate__animated animate__fadeIn">
     <div class="loxi_author">
       <div class="loxi_blur"></div>
       <div class="loxi_padding">
         <img src="/img/LoXi/LoXi_Logo.png" alt="LoXi Logo" class="author_logo animate__animated animate__pulse" />
-        <!-- <div class="author_name">洛溪 LoXi</div> -->
         <div class="author_desc animate__animated animate__fadeInUp animate__delay-1s">Some days you bloom,<br>some days
           you grow roots.<br>Both matter.</div>
         <div class="author_contact animate__animated animate__fadeInUp animate__delay-2s">
-          <!-- <a target="_blank" v-for="item in contactLinkConfig" :href="item.link" class="contact_link">{{ item.name
-          }}</a> -->
           <RouterLink class="contact_link" to="/contact">Contact me</RouterLink>
         </div>
       </div>
@@ -28,17 +25,15 @@ import CFooter from '@/components/UI/Footer.vue';
     <div class="loxi_page">
       <Navbar />
       <div class="loxi_view">
-        <!-- <img src="/img/LoXi/LoXi_Street.webp" alt="LoXi Book Bg" class="view_bg"> -->
         <div class="loxi_width">
           <RouterView></RouterView>
           <CFooter />
         </div>
       </div>
-      <!-- <Tool /> -->
     </div>
-  </div>
-  <div v-else class="animate__animated animate__fadeIn">
-    <RouterView></RouterView>
+  </div> -->
+  <div class="animate__animated animate__fadeIn">
+    <PageCard />
   </div>
 </template>
 

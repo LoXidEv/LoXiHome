@@ -27,6 +27,7 @@ export default {
     border-radius: var(--border-radius);
     margin-bottom: 20px;
     transition: all 0.3s;
+    width: 100%;
     cursor: pointer;
 
     &:hover {
