@@ -4,7 +4,7 @@ import Sponsor from './Sponsor.vue';
 
 <template>
     <div class="cosh_home_main">
-        <img src="/img/LoXi/LoXi_avatar.webp" class="main_banner" alt="Art by cannot">
+        <img src="/img/LoXi/LoXi_Street.webp" class="main_banner" alt="Art by cannot">
         <div class="home_main_content">
             <img src="/img/logo/logo_cosh_dark.svg" alt="COSH Logo" class="logo animate__animated animate__pulse">
             <div class="title animate__animated animate__fadeInUp animate__delay-1s">LoXi</div>
@@ -37,8 +37,14 @@ import Sponsor from './Sponsor.vue';
     max-width: 100%;
     height: 100vh;
     object-fit: cover;
-    opacity: 0.4;
-    filter: blur(6px);
+    opacity: 0.2;
+    filter: blur(10px);
+    transition: all 0.3s;
+
+    &:hover {
+        filter: blur(2px);
+        opacity: 0.4;
+    }
 }
 
 .home_main_content {

@@ -32,7 +32,6 @@ export default {
 <template>
     <div class="loxi_card_main">
         <div class="main_card">
-
         </div>
         <div style="z-index: 2;">
             <img src="/img/LoXi/LoXi_birthday.webp" alt="Banner" class="loxi_banner">
