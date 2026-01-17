@@ -19,7 +19,7 @@ export default {
     mounted() {
         this.type();
     },
-    beforeDestroy() {
+    beforeUnmount() {
         clearTimeout(this.timeout);
     },
     methods: {
