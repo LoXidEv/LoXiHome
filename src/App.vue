@@ -1,7 +1,7 @@
 <script setup>
 import Navbar from '@/components/UI/Navbar.vue';
 import CFooter from '@/components/UI/Footer.vue';
-import PageCard from '@/components/Card.vue';
+// import PageCard from '@/components/Card.vue';
 // import Tool from '@/components/Tool.vue';
 // import Start from '@/components/Start.vue';
 // import { ref } from 'vue';
@@ -10,7 +10,7 @@ import PageCard from '@/components/Card.vue';
 </script>
 
 <template>
-  <!-- <div v-if="$route.name !== 'card'" class="loxi_main animate__animated animate__fadeIn">
+  <div v-if="$route.name !== 'card'" class="loxi_main animate__animated animate__fadeIn">
     <div class="loxi_author">
       <div class="loxi_blur"></div>
       <div class="loxi_padding">
@@ -31,10 +31,10 @@ import PageCard from '@/components/Card.vue';
         </div>
       </div>
     </div>
-  </div> -->
-  <div class="animate__animated animate__fadeIn">
-    <PageCard />
   </div>
+  <!-- <div class="animate__animated animate__fadeIn">
+    <PageCard />
+  </div> -->
 </template>
 
 <style>
