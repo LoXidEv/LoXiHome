@@ -33,7 +33,7 @@ const contactLinkConfig = ref([{
 
 
 <template>
-    <div class="loxi_page animate__animated animate__fadeIn">
+    <div class="animate__animated animate__fadeIn">
         <div class="loxi_title">Contact me.</div>
         <div class="loxi_subtitle">通过下面的联系方式联系我。</div>
         <!-- <img src="/img/construction.webp" alt="Construction" class="oc_img_fullwidth" /> -->

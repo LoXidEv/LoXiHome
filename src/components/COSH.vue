@@ -2,120 +2,83 @@
 export default {
     data() {
         return {
-            isDark: false
+
         }
     },
-    mounted() {
-        this.isDark = localStorage.getItem("theme") == "dark";
-        window.addEventListener('themeChanged', this.handleThemeChange);
-    },
-    beforeUnmount() {
-        window.removeEventListener('themeChanged', this.handleThemeChange);
-    },
-    methods: {
-        handleThemeChange(event) {
-            this.isDark = event.detail.isDark;
-        }
-    }
-    
 }
 </script>
 
 <template>
     <div class="cosh_worker_main">
-        <div class="cosh_worker_top">
-            <div class="cosh_worker_banner">
-                <img src="/img/logo/logo_cosh_light.svg" class="cosh_worker_logo" alt="COSH Logo" v-if="isDark">
-                <img src="/img/logo/logo_cosh_dark.svg" class="cosh_worker_logo" alt="COSH Logo" v-else>
+        <div class="cosh_worker_image">
+            <img src="/img/logo/logo_cosh_dark.svg" class="cosh_worker_logo" alt="COSH Logo">
+            <img src="https://avatars.githubusercontent.com/u/110319858?v=4" class="cosh_worker_avatar"
+                alt="Member Avatar">
+        </div>
+        <div class="cosh_worker_info">
+            <div>
                 <div class="cosh_worker_title">
                     COSH
                 </div>
                 <div class="cosh_worker_subtitle">
-                    从一行代码到一个世界
+                    COSH 是由三只小动物开发者组成的开发社团，从一行代码到一个世界。我们的成员涵盖了各种编程语言和技术领域，无论你是初学者还是经验丰富的开发者，都能很快的融入我们。
                 </div>
-                <div>Link: <a class="cosh_link" target="_blank" href="https://cosh.work">cosh.work</a></div>
             </div>
-            <img src="https://avatars.githubusercontent.com/u/110319858?v=4" class="cosh_worker_avatar"
-                alt="Member Avatar">
-        </div>
-        <div class="cosh_worker_bottom">
-            <div>
-                <span class="cosh_worker_span">NAME:</span>
-                LoXi
-            </div>
-            <div>
-                <span class="cosh_worker_span">ROLE:</span>
-                Frontend-Developer
-            </div>
-            <div>
-                <span class="cosh_worker_span">COSH ID:</span>
-                loxidev
-            </div>
+            <a class="loxi_button" target="_blank" href="https://cosh.work">cosh.work</a>
         </div>
     </div>
 </template>
 
 <style scoped>
-.cosh_worker_span {
-    font-family: 'HooskaiChamferedSquare';
+.cosh_worker_image {
+    position: relative;
+    min-width: 180px;
 }
 
-.cosh_worker_bottom {
-    margin-top: 20px;
+.cosh_worker_info {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    gap: 4px;
-}
-
-.cosh_link {
-    color: var(--theme-color);
-    text-decoration: none;
-    transition: all 0.3s;
-
-    &:hover {
-        opacity: 0.8;
-    }
-}
-
-.cosh_worker_top {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-}
-
-.cosh_worker_banner {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .cosh_worker_title {
     font-family: 'HooskaiChamferedSquare';
     font-weight: bold;
-    font-size: 20px;
-    margin-left: -2px;
+    font-size: 60px;
+    margin-left: -4px;
 }
 
 .cosh_worker_subtitle {
-    font-size: 14px;
-    margin-left: -2px;
+    max-width: 400px;
 }
 
 .cosh_worker_logo {
-    width: 40px;
-    margin-bottom: 4px;
+    width: 120px;
+    z-index: -1;
 }
 
 .cosh_worker_avatar {
-    width: 120px;
+    position: absolute;
+    top: -30px;
+    left: 62px;
+    z-index: 1;
+    width: 100px;
+    border: 4px solid var(--text-color);
     border-radius: 8px;
 }
 
 .cosh_worker_main {
-    padding: 10px;
-    border: 2px var(--theme-color-2) solid;
-    border-radius: var(--border-radius);
-    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 100px 0 0 0;
+}
+
+@media screen and (max-width: 520px) {
+    .cosh_worker_main {
+        flex-wrap: wrap;
+    }
 }
 </style>

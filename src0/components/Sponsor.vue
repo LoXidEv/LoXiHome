@@ -21,12 +21,13 @@ export default {
 <style>
 .sponsor_main {
     position: relative;
-    background-color: #956ce634;
+    background-color: #956ce66c;
     color: #956ce6;
     padding: 8px;
     border-radius: var(--border-radius);
     margin-bottom: 20px;
     transition: all 0.3s;
+    width: 100%;
     cursor: pointer;
 
     &:hover {

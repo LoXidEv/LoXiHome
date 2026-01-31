@@ -4,24 +4,25 @@
         <div class="footer_copyright">
             Copyright © LoXi 2024-{{ new Date().getFullYear() }}. All rights reserved.
         </div>
-        <img alt="Moe Counter" style="display: none;"
+        <br>
+        <img width="100%" alt="Moe Counter"
+            class="animate__animated animate__fadeIn"
             src="https://count.getloli.com/@LoXidEv?name=LoXidEv&theme=booru-ve&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto">
     </div>
 </template>
 
 <style scoped>
 .loxi_footer {
-    text-align: center;
     padding: 20px 0;
 }
 
 .footer_desc {
     font-size: 14px;
-    font-weight: bold;
+    font-family: 'MonaspaceKryptonVarVF';
 }
 
 .footer_copyright {
-    font-family: 'MonaspaceKryptonVarVF';
+    opacity: 0.4;
     font-size: 14px;
 }
 </style>
