@@ -22,7 +22,7 @@ export default {
                     LoXi,天冬草,洛溪。虚构故事：是个总是在图书馆的 天冬大学 计算机系学生。内向安静，总窝在三楼靠窗角落，安静编织属于自己的代码世界。
                 </div>
             </div>
-            <RouterLink class="loxi_button" to="/oc">Original Character</RouterLink>
+            <!-- <RouterLink class="loxi_button" to="/oc">Original Character</RouterLink> -->
             <RouterLink class="loxi_button" to="/contact">Contact me</RouterLink>
         </div>
     </div>

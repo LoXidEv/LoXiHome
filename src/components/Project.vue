@@ -66,13 +66,13 @@ export default {
 
 @media screen and (max-width: 520px) {
     .project_main {
-        text-align: center;
         flex-wrap: wrap;
+        align-items: flex-start;
         flex-direction: column-reverse;
     }
 
-    .project_info {
-        align-items: center;
+    .project_logo{
+        margin-left: -60px;
     }
 }
 </style>

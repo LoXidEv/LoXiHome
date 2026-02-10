@@ -10,10 +10,10 @@ export default {
                     name: "Home",
                     id: "home"
                 },
-                {
-                    name: "Original Character",
-                    id: "oc"
-                },
+                // {
+                //     name: "Original Character",
+                //     id: "oc"
+                // },
                 {
                     name: "Contact me",
                     id: "contact"
@@ -43,24 +43,35 @@ export default {
 .loxi_navbar_container {
     z-index: 9999;
     position: fixed;
-    top: 0;
+    top: 20px;
     left: 0;
     right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-color-oc);
-    backdrop-filter: blur(10px);
+    pointer-events: none;
 }
 
 .loxi_navbar {
+    pointer-events: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
     text-align: center;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 10px 20px;
+    background-color: var(--background-color-oc);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.3s ease;
+}
+
+.loxi_navbar:hover {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+    transform: translateY(-2px);
 }
 
 .navbar_item {

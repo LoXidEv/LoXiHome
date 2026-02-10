@@ -1,4 +1,5 @@
 <script setup>
+import ViewHome from '@/components/ViewHome.vue';
 import COSH from '@/components/COSH.vue';
 import Project from '@/components/Project.vue';
 import Introduction from '@/components/Introduction.vue';
@@ -6,8 +7,7 @@ import Introduction from '@/components/Introduction.vue';
 
 <template>
     <div class="loxi_page animate__animated animate__fadeIn">
-        <div class="loxi_title">Hello friend.</div>
-        <div class="loxi_subtitle">欢迎来到我的网站！</div>
+        <ViewHome />
         <div>
             <Introduction />
             <Project />
